@@ -11,7 +11,9 @@ Fix: chain same-subject actions with converbs (-ж, -аад, -вал, -тал), 
 
 (One finite verb remains, so the -сан ending stays as in the original.)
 
-A run means three or more consecutive sentences with the same ending. Merge when sentences share a subject and form a sequence, or when they form a run. With different subjects (as above), join with -ж or "бөгөөд"; never use -аад/-н or a reflexive -аа/-ээ that would point to the wrong subject. Short sentences with different subjects and varied endings are fine as they are.
+A run means three or more consecutive sentences in one paragraph with the same ending. One-line list items (a report's "2-р сард ... зохион байгуулсан." entries) are a list, not a run; leave them. Runs of an auxiliary or particle ("... байна. ... байна.", "... юм. ... юм.") are native rhythm.
+
+**Measured [өгөгдөл]:** -сан runs are about as frequent in pre-2021 human writing as in chatbot output. Fix them for rhythm where they read болхи, not as a sign of translation or AI. Merge when sentences share a subject and form a sequence, or when they form a run. With different subjects (as above), join with -ж or "бөгөөд"; never use -аад/-н or a reflexive -аа/-ээ that would point to the wrong subject. Short sentences with different subjects and varied endings are fine as they are.
 
 ## R2. Choppy one-clause sentences [эх сурвалж + дүгнэлт]
 
@@ -24,7 +26,9 @@ Style textbooks give a sentence with four "нь" as a redundancy error, and "Т�
 > **Before:** Энэ хөтөлбөр нь сурагчдын мэдлэг нь дээшлэхэд нь тусалдаг.
 > **After:** Энэ хөтөлбөр сурагчдын мэдлэгийг дээшлүүлэхэд тусалдаг.
 
-**Keep "нь"** as topic marker ("Боловсрол нь ..."), in "учир нь", for kinship ("ээж нь"), and once per clause where it reads naturally. Parallel contrastive "нь" across balanced clauses is native rhetoric, as in Ринчен's own "Үг нь монгол, өгүүлбэр нь орос". The fault is "нь" stacked inside one clause.
+**Keep "нь"** as topic marker ("Боловсрол нь ..."), as a possessive after a case ending ("гарыг нь", "дээшлэхэд нь"), in fixed phrases ("учир нь", "ер нь", "жишээ нь"), for kinship ("ээж нь"), and twice in a clause where it reads naturally ("Аав нь гарыг нь бариад"). Parallel contrastive "нь" across balanced clauses is native rhetoric, as in Ринчен's own "Үг нь монгол, өгүүлбэр нь орос". The fault is three or more "нь" stacked inside one clause, as in the textbook example above.
+
+**Measured [өгөгдөл]:** human writers use "нь" about five times as often as chatbots do, so a little "нь" is never evidence of translation.
 
 ## R4. Single-word redundancy [эх сурвалж]
 
@@ -33,7 +37,7 @@ Journalism stylistics (үг илүүдсэн алдаа): "Маш их завг�
 ## R5. "маш", and "болон" in lists [зөвлөмж]
 
 Translator advice (unread.today):
-- Use "маш" sparingly; where emphasis is real, vary with нэн, тун, асар, үлэмж.
+- Use "маш" sparingly; where emphasis is real, vary with нэн, тун, асар, үлэмж. (Chatbots do not overuse "маш" compared with human writers [өгөгдөл]; this is general style advice.)
 - In lists, "болон/ба" is often unnecessary: "Дорж, Дондог, болон Бат" → "Дорж, Дондог, Бат". Sometimes it is needed; keep it then.
 
 ## R6. Endings carry meaning [эх сурвалж: Brosig]

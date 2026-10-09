@@ -1,6 +1,8 @@
 # Worked examples (бүрэн жишээ)
 
-No rewrite adds a fact, an actor, or a meaning that is not in the input.
+No rewrite adds a fact, an actor, or a meaning that is not in the input (tests/test_examples.py checks numbers and names).
+
+Contents: 1 acceptable essay · 2 translated report · 3 official letter · 4 social post · 5 texts to leave alone · 6 chatbot reply: remove the wrapper only
 
 ## 1. Acceptable essay: one small fix
 
@@ -105,3 +107,31 @@ These came back unchanged in testing, which is correct:
 - **Legal:** "Хуулийн этгээдэд татварын хөнгөлөлт үзүүлэх асуудлыг Засгийн газар шийдвэрлэнэ." Legal term, doer named. Засвар шаардлагагүй.
 - **Fiction dialogue:** "— Чи хаашаа явж байгаа юм бэ? гэж ээж асуув." Dialogue dash, "чи" between family, quoted speech. Засвар шаардлагагүй.
 - **Personal note:** "Өнгөрсөн зун аав ээжтэйгээ хөдөө явж, нутгийнхаа уул усыг тойрч ирлээ." Paired words, converb chain, "-лаа" in personal narration. Засвар шаардлагагүй.
+
+## 6. Chatbot reply: remove the wrapper only
+
+**Input** (a GPT-5.5 reply to "write a Facebook post about a weekend trip to Terelj"):
+
+> Мэдээж. Иймэрхүү пост болно:
+>
+> Амралтын өдрөөр найзуудтайгаа Тэрэлж яваад, хотын завгүй хэмнэлээс түр ч гэсэн холдож сайхан амарлаа. Цэвэр агаар, уул ус, инээд хөөр, дурсамж дүүрэн өдрүүд байлаа. Ийм энгийн мөртлөө үнэ цэнтэй мөчүүд л хамгийн гоё нь юм байна. 🏞️
+>
+> Найзуудтайгаа хамт өнгөрүүлсэн энэ аялал нэг сайхан дурсамж болон үлдлээ.
+
+**Дүгнэлт:** social post written by a chatbot; the post itself is natural. Light: only the line addressed to the requester goes.
+
+**Засвар хийсэн зүйлс:**
+- "Мэдээж. Иймэрхүү пост болно:": a reply to the person who asked the chatbot, not part of the post (ai-output.md A1).
+
+**Хэвээр үлдээсэн зүйлс:**
+- "уул ус", "инээд хөөр": paired words.
+- "яваад, ... холдож ... амарлаа": a converb chain with first-person "-лаа".
+- "л", "юм байна", the emoji: the post's own voice and genre.
+
+**Засварласан хувилбар:**
+
+> Амралтын өдрөөр найзуудтайгаа Тэрэлж яваад, хотын завгүй хэмнэлээс түр ч гэсэн холдож сайхан амарлаа. Цэвэр агаар, уул ус, инээд хөөр, дурсамж дүүрэн өдрүүд байлаа. Ийм энгийн мөртлөө үнэ цэнтэй мөчүүд л хамгийн гоё нь юм байна. 🏞️
+>
+> Найзуудтайгаа хамт өнгөрүүлсэн энэ аялал нэг сайхан дурсамж болон үлдлээ.
+
+Most chatbot output needs no more than this plus notes. Do not "humanize" a text that already reads well by adding particles, opinions, or details of a trip the author has not described.

@@ -1,10 +1,12 @@
 # Хэвлэлийн тэмдэг, хэлбэр (typography and formatting)
 
-All rules here are **[дүгнэлт]**: general AI formatting habits, not measured for Mongolian. Treat them as light signals and never let them override the author's own habits.
+Most rules here are **[дүгнэлт]**: general AI formatting habits. Where they were measured on Mongolian, it says so. Treat them as light signals and never let them override the author's own habits.
 
 ## Y1. Dash pauses
 
 **Rule:** in expository prose (essays, letters, reports, posts), replace em or en dashes (—, –) used as mid-sentence pauses, and " -- ", with a comma, a colon, parentheses, or nothing.
+
+**Measured [өгөгдөл]:** Claude uses such dashes about 7× as often as human writers; GPT uses fewer than humans. It is one model's habit, not a sign of AI Mongolian in general.
 
 **Keep:**
 - Dialogue dashes at the start of a speech line ("— Сайн уу? гэв."), standard in Mongolian fiction.
@@ -28,6 +30,8 @@ Mongolian writers use «...» or "...". Keep whichever the author uses, consiste
 
 **Watch for:** lists where each item starts with a bold word and a colon ("**Давуу тал:** ...") inside essays and letters.
 **Fix:** in essays and letters, turn them into prose. In documentation and instructions, plain lists are fine.
+
+**Keep:** a header block of labelled fields at the top or bottom of an official letter ("Огноо:", "Дугаар:", "Хэнд:"). It is a form, not prose; keep it, and if the bold is uneven make it consistent. Placeholders inside it stay (ai-output.md A2).
 
 ## Y5. Emoji
 

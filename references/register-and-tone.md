@@ -64,7 +64,7 @@
 
 ## Tone guard: check every rewrite
 
-A rewrite fails if any answer is "yes":
+SKILL.md's audit repeats these questions so they stay in view. A rewrite fails if any answer is "yes":
 
 1. Did I label a group of people ("боловсролгүй хүн", "хойрго ажилчид") where the original did not?
 2. Did a framed or softened statement become a flat verdict?
