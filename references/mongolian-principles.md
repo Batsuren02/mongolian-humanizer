@@ -8,14 +8,13 @@ Tags: **[эх сурвалж]** = stated in a Mongolian stylistics or linguistic
 
 | Translated (noun-heavy) | Mongolian (verb) |
 |---|---|
-| ярилцлага хийв | ярилцав |
+| ярилцлага хийв (held talks) | ярилцав |
 | уулзалт хийлээ | уулзлаа |
-| цөлжилт явагдсан байна | цөлжсөн |
-| татварын хөнгөлөлт үзүүлжээ | татвараас хөнгөлжээ |
+| цөлжилт явагдсан байна | цөлжсөн байна |
 | туршилт хийгдэнэ | туршина |
 | мал төллөлт явагдаж байна | мал төллөж байна |
-| Би итгэлтэй байна | Би итгэж байна |
-| эдийн засгийн харилцааны хөгжил | эдийн засгийн харилцааг хөгжүүлэх нь |
+
+**Do not apply:** Энхбаяр also lists "Би итгэлтэй байна" → "Би итгэж байна" and "татварын хөнгөлөлт үзүүлжээ" → "татвараас хөнгөлжээ". In modern usage "итгэлтэй байна" (I am sure) is native and means something different from "итгэж байна" (I believe, trust), and "хөнгөлөлт үзүүлэх" is a legal term. Keep both. When "ярилцлага" means an interview, keep it too.
 
 **Not a fault:** a lexicalised -лт noun used as a noun ("Уулзалт амжилттай болов", "Сургалтад хамрагдсан"), and event nouns with болох/явагдах ("Хурал маргааш болно", "Сургалт 10 дугаар сарын 20-нд явагдана"). The fault is replacing an available verb with noun + хийх/хийгдэх, or a process noun (хүйтрэлт, төллөлт, цөлжилт, сайжруулалт) + явагдах/болох where the plain verb exists.
 
@@ -39,19 +38,22 @@ What a foreign skeleton looks like **[эх сурвалж: Энхбаяр, Чу�
 Paired words to keep: эрх үүрэг, гэм буруу, инээд хөөр, орлого зарлага, ах дүү, өдөр шөнө, эд хөрөнгө, аав ээж, эцэг эх, сайн сайхан, ололт амжилт, хүн амьтан.
 
 Rules:
-- Case and plural attach once, to the last element: "ах дүүгийнхээ", "хонь малаа" (not "хонь малуудаа").
+- Case attaches once, to the last element: "ах дүүгийнхээ".
+- Collective pairs of things take no plural: "хонь малаа" (not "хонь малуудаа"), "ололт амжилт". Pairs naming people may take a group plural: "эцэг эхчүүд".
 - Do not collapse a pair to one word to "save space".
 - Keep balanced parallel clauses ("...-ыг хамгаалж, ...-ыг хөгжүүлэх").
 - **[дүгнэлт]** A single curt clause replacing a balanced sentence reads lopsided, and often rude.
 
 ## 4. Нөхцөл үйл үгээр холбо (converb chains)
 
-**[эх сурвалж]** Converbs chain clauses; only the last verb is finite and carries tense (Brosig; switch-reference descriptions). Meanings: -ж parallel or sequential; -аад one after another; -н manner, same subject; -саар long duration; -тал until; -вал if; -хлаар, -магц when, as soon as. Same-subject chains use the reflexive -аа/-ээ.
+**[эх сурвалж]** Converbs chain clauses; only the last verb is finite and carries tense (Brosig; switch-reference descriptions). Meanings: -ж parallel or sequential; -аад one after another; -н manner, same subject; -саар long duration; -тал until; -вал if; -хлаар, -магц when, as soon as. In same-subject chains, the reflexive -аа/-ээ points back to the shared subject.
 
 **[эх сурвалж]** Ринчен rendered Russian gerunds mostly with -ж, -аад, -вал, and often fused several short Russian sentences into one compound sentence for readability: "Дайсны нэг цэрэг дэргэд минь шахуу хүрч ирээд, мөрнөөсөө автоматаа мулталлаа." Эрдэнэмаам calls repeated -сан/-сэн/-сон endings "болхи". A journalism stylistics text judges a six-clause converb sentence split into five simple sentences as worse style ("түрүүчийнхээс найруулга муу"), because of identical endings and repeated connectives.
 
 > **Choppy:** Бид өглөө эрт гарсан. Бид уул руу явсан. Бид тэнд хоол идсэн.
-> **Chained:** Өглөө эрт гараад уул руу явж, тэнд хоолоо идлээ.
+> **Chained:** Өглөө эрт гараад уул руу явж, тэнд хоол идсэн.
+
+(The final ending stays -сан, as in the original. Chaining fixes the rhythm; the evidential does not need to change.)
 
 Short sentences are not wrong. Uniform short sentences with identical endings are.
 
@@ -75,7 +77,7 @@ Choosing a word without regard to its rung is "үг буруу сонгосон 
 
 **[эх сурвалж: Brosig 2015, 2018; Brosig, Yap & Ahrens 2019]**
 - **-сан/-сэн:** established knowledge.
-- **-лаа/-лээ:** direct, recent.
+- **-лаа/-лээ:** direct, usually recent; also common in first-person narration of the writer's own experience.
 - **-жээ/-чээ:** indirect, learned or discovered; narrative past.
 - **-в:** written narrative style.
 - **-даг/-дэг:** habitual or general truth. Swapping it for -на turns a habit into a prediction.

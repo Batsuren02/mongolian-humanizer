@@ -8,21 +8,23 @@ Read this before any substantial rewrite. Every item here is native Mongolian th
 - **Long converb-chained sentences.** Native and often better than short ones (Ринчен; journalism stylistics).
 - **Formal formulas (тогтсон хэллэг):** "чухал үүрэг гүйцэтгэдэг", "онцгой ач холбогдолтой", "Өнөөгийн ... эрин үед", "Дүгнэж хэлэхэд". Сүхбаатар calls fixed phrases a general feature of human language, heavily used in newspapers. In essays and official text they are expected.
 - **Official formulas:** "Иймд ...-ыг хүсье", "...-ыг танилцуулж байна", "-тэй холбогдон", "үндсэн дээр", "Хүндэтгэсэн", "Танаа".
-- **"Энэ нь", "бол", topic "нь".** Native topic marking. Only a pile-up within one sentence is a fault.
+- **"Энэ нь", "бол", topic "нь".** Native topic marking, including parallel contrastive "нь" across balanced clauses. Only "нь" stacked inside one clause is a fault.
 - **Lexicalised -лт nouns** used as nouns: уулзалт, сургалт, ярилцлага, хэрэглээ.
 - **Native compound verbs:** зохион байгуулах, хүлээн авах, хянан шалгах, зохион бүтээх.
 - **Perception and spontaneous -гд-:** харагдах, санагдах, бодогдох, сонсогдох.
 - **Particles and stance endings:** юм, билээ, шүү, даа/дээ, л, ч, биз, "-даг юм".
 - **Plural on people for a group:** багш нар, эцэг эхчүүд, хүүхдүүд (no numeral or quantifier). Also "сүүлийн жилүүдэд": "сүүлийн" is not a quantifier.
 - **Event nouns with болох/явагдах:** "хурал болно", "сургалт явагдана".
+- **Established noun + verb terms:** "татварын хөнгөлөлт үзүүлэх" (legal term), "захиалга хийх", "дүгнэлт гаргах", "шийдвэр гаргах", "итгэлтэй байна" (I am sure).
+- **Dialogue dashes** at the start of a speech line in fiction ("— Сайн уу? гэв.").
 - **"-х боломжтой", "-х болно":** native modal and future forms that carry meaning.
-- **"-лаа" in personal narration** of past experience.
+- **"-лаа" in personal narration** of past experience, and -сан mixed with -лаа for the same event.
 - **Honorific words** when addressing elders, superiors, or in ceremony.
 - **School-essay conventions:** эхлэл / үндсэн хэсэг / дүгнэлт, quotations, imagery, idioms. The curriculum rewards them.
 
 ## Human signals (keep)
 
-- Typos, dialect, spoken forms. Do not correct unless asked.
+- Typos, dialect, spoken forms in the user's own writing. Do not correct unless asked. (In AI-generated text, misspellings and invented words are errors; fix them.)
 - Latin-script Mongolian in casual posts ("bi irlee"). Do not convert unless asked.
 - Specific, odd details: a street name, a teacher's nickname, a price.
 - Mixed feelings or doubt: "Зөв гэж бодож байгаа ч яг итгэлгүй байна."
@@ -30,8 +32,8 @@ Read this before any substantial rewrite. Every item here is native Mongolian th
 
 ## Leave alone entirely
 
-- Quoted speech, names of organizations, titles of laws and books, and phrases being discussed as examples.
-- Legal text: fix only chatbot leftovers and obvious calques; do not restyle.
+- The words inside quotations, names of organizations, titles of laws and books, and phrases being discussed as examples. (T8 may adjust only the framing around a quote, in translated text.)
+- Legal text (laws, regulations, contracts): do not restyle. Remove chatbot leftovers; flag calques in Анхаарах instead of rewriting.
 
 ## The test
 

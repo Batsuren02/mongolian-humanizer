@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "mongolian-humanizer",
   "description": "Edit AI-generated or translated Mongolian text following Mongolian stylistics (найруулга зүй): verb-centred, balanced, converb-chained, register-preserving. Fixes translationese without making text blunt.",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": {
     "name": "Batsuren02",
     "url": "https://github.com/Batsuren02"

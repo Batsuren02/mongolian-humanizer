@@ -1,53 +1,45 @@
 # Mongolian Humanizer
 
-Хиймэл оюуны бичсэн болон орчуулсан монгол текстийг монгол найруулга зүйн зарчмаар засварладаг AI agent skill. Claude Code, Codex, Cursor болон SKILL.md уншдаг бусад хэрэгсэлд ажиллана.
+Хиймэл оюуны бичсэн, эсвэл гадаад хэлнээс орчуулсан монгол текстийг уншихад нэг л эвгүй санагддаг. Үг нь зөв, дүрэм нь алдаагүй мөртлөө өгүүлбэр нь монгол биш. Ринчен гуай нэгэн оюутны орчуулгыг "Үг нь монгол, өгүүлбэр нь орос байна" гэж шүүмжилсэн нь яг үүнийг хэлсэн хэрэг. Энэ skill ийм текстийг монгол найруулга зүйн ёсоор засварлахад тусална. Claude Code, Codex, Cursor зэрэг SKILL.md уншдаг хэрэгсэл бүхэнд ажиллана.
 
 *English below.*
 
-## Яагаад хэрэгтэй вэ
+## Жишээ
 
-ChatGPT, Claude зэрэг загварын бичсэн монгол текст дүрмийн хувьд зөв ч уншихад орчуулга шиг санагдах нь бий. Ринчен гуай нэгэн орчуулгыг "Үг нь монгол, өгүүлбэр нь орос байна" гэж шүүмжилсэн байдаг. AI-ийн монгол текст ч мөн адил: үг нь монгол, өгүүлбэрийн бүтэц нь англи.
+Хиймэл оюуны бичсэн тайлан:
 
 > Өчигдөр сургууль дээр эцэг эхчүүдтэй уулзалт хийгдсэн. Уулзалтаар хүүхдүүдийн сурлагын асуудлууд хөндөгдсөн. Олон эцэг эхчүүд санал хэлсэн. Багш нар саналуудыг хүлээн авсан.
 
 Засварласны дараа:
 
-> Өчигдөр сургууль дээр эцэг эхчүүдтэй уулзаж, хүүхдүүдийн сурлагын асуудлыг ярилцлаа. Олон эцэг эх санал хэлж, багш нар саналыг нь хүлээн авсан.
+> Өчигдөр сургууль дээр эцэг эхчүүдтэй уулзалт болсон. Уулзалтаар хүүхдүүдийн сурлагын асуудлыг хөндөж, олон эцэг эх санал хэлсэн бөгөөд багш нар саналыг нь хүлээн авсан.
 
-Англи хэлний humanizer-үүд "богино, энгийн, шулуун бич" гэж заадаг. Монгол текстэд ийм зөвлөгөө хэрэглэвэл бичвэр бүдүүлэг, сондгой болдог. Тиймээс энэ skill англи хэлний дүрмийг биш, монгол найруулга зүйн зарчмыг баримтална.
+Харин аль хэдийн сайн бичигдсэн текстэд skill гар хүрэхгүй. "Өнөөгийн хурдацтай хөгжиж буй технологийн эрин үед боловсрол нь хүний амьдралд маш чухал үүрэг гүйцэтгэдэг юм" гэх мэт өгүүлбэрийг засах шаардлагагүй гээд орхино.
 
-## Долоон зарчим
+## Ямар зарчим баримталдаг вэ
 
-1. **Үйл үг бол амин сүнс.** "Уулзалт хийлээ" биш "уулзлаа".
-2. **Үг нь ч, өгүүлбэр нь ч монгол.** Үйлдэгдэхүүн хэвийг (-гд-) үйлдэгчгүй хэрэглэсэн, илүүдэл олон тооны дагавартай өгүүлбэрийг засна.
-3. **Тэгш хэм, хорших ёс.** Хос үг, тэнцвэртэй өгүүлбэрийг хэвээр үлдээнэ.
-4. **Нөхцөл үйл үгээр холбох.** "-сан. -сан. -сан." гэж дуусах богино өгүүлбэрүүдийг -ж, -аад нөхцөлөөр холбоно.
-5. **Зохистой байх.** Найруулгын төрөлд нийцүүлнэ: хэт чамирхахгүй, хэт товчлохгүй.
-6. **Төгсгөл, сул үгийг хадгалах.** "-даг юм", "билээ", "шүү" зэрэг нь утга агуулдаг.
-7. **Хүндэтгэл.** Засварласан текст эхээсээ бүдүүлэг, хүйтэн болох ёсгүй.
+Англи хэлний humanizer-үүд "богино, энгийн, шулуун бич" гэж заадаг. Монгол текстэд үүнийг хэрэглэвэл бичвэр бүдүүлэг, сондгой болчихдог. Тиймээс энэ skill англи хэлний биш, монгол найруулга зүйн зарчмыг баримтална.
 
-## Юуг засахгүй вэ
+Монгол хэлэнд үйл үг өгүүлбэрийн амин сүнс болдог тул "уулзалт хийлээ" гэхийн оронд "уулзлаа" гэж бичнэ. -гд- дагавраар хэн хийснийг нуусан өгүүлбэрт үйлдэгч мэдэгдэж байвал түүнийг эргүүлж өгнө. "Олон номууд" гэх мэт илүүдэл олон тооны дагаврыг хасна. Ижил төгсгөлтэй богино өгүүлбэрүүд цуварвал нөхцөл үйл үгээр холбож, нэг урсгалтай болгоно.
 
-"Чухал үүрэг гүйцэтгэдэг", "Дүгнэж хэлэхэд", "Мөн түүнчлэн" зэрэг тогтсон хэллэг, хос үг, урт нийлмэл өгүүлбэр, сэдэв заасан "нь", "юм" зэрэг нь монгол хэлний жам ёсны хэрэглээ тул засахгүй. Текст аль хэдийн зөв бол skill "засах шаардлагагүй" гэж хэлнэ.
-
-Эх бичвэрт байхгүй баримт, тоо, эх сурвалж, хувийн үзэл бодлыг хэзээ ч нэмэхгүй.
+Монгол хэлний сайхан талыг ч мөн хамгаална. Хос үг, тэнцвэртэй өгүүлбэр, урт нийлмэл өгүүлбэр, "чухал үүрэг гүйцэтгэдэг", "Дүгнэж хэлэхэд" мэтийн тогтсон хэллэг, "юм", "шүү", "билээ" гэх сул үгс бүгд утга агуулж, бичвэрт өнгө аяс өгдөг. Засварласан текст эхээсээ хэзээ ч бүдүүлэг, хүйтэн болох ёсгүй. Эх бичвэрт байхгүй баримт, тоо, эх сурвалж, хувийн үзэл бодлыг ч нэмэхгүй.
 
 ## Суулгах
 
-**Skills CLI (бүх agent-д):**
+Бүх agent-д нэг дор суулгах бол:
 
 ```bash
 npx skills add Batsuren02/mongolian-humanizer --global
 ```
 
-**Claude Code plugin:**
+Claude Code-ын plugin хэлбэрээр:
 
 ```
 /plugin marketplace add Batsuren02/mongolian-humanizer
 /plugin install mongolian-humanizer@mongolian-humanizer
 ```
 
-**Гараар:**
+Эсвэл гараар:
 
 ```bash
 git clone https://github.com/Batsuren02/mongolian-humanizer.git ~/.claude/skills/mongolian-humanizer
@@ -55,28 +47,13 @@ git clone https://github.com/Batsuren02/mongolian-humanizer.git ~/.claude/skills
 
 ## Хэрэглэх
 
-Claude Code дээр `/mongolian-humanizer` гэж бичээд текстээ хуулж тавина. Эсвэл "Энэ текстийг монгол хүний бичсэн мэт болгоод өг" гэж хэлж болно. Өөрийн бичсэн текстийн жишээ өгвөл skill таны хэв маягийг дагана.
+Claude Code дээр `/mongolian-humanizer` гэж бичээд текстээ хуулж тавихад хангалттай. "Энэ текстийг монгол хүний бичсэн мэт болгоод өгөөч" гэж энгийнээр хэлсэн ч болно. Skill юуг зассан, юуг санаатайгаар хэвээр үлдээснээ тайлбарлаад, дараа нь засварласан хувилбараа өгнө. Өөрийн бичсэн текстээс жишээ өгвөл таны хэв маягийг дагана.
 
-Skill юуг зассан, юуг санаатайгаар хэвээр үлдээснээ тайлбарлаж, дараа нь засварласан хувилбарыг өгнө.
+Python суулгасан бол `scripts/mn_markers.py` скриптээр орчуулгын шинжийг тоолж болно. Энэ нь зөвхөн туслах хэрэгсэл болохоос эцсийн шийдвэр биш.
 
-### Шалгах скрипт
+## Хамтдаа сайжруулъя
 
-Python байгаа бол орчуулгын шинжийг (нэр үг + хийх, үйлдэгчгүй -гд-, илүүдэл олон тоо, ижил төгсгөлтэй өгүүлбэрийн цуваа гэх мэт) тоолж болно:
-
-```bash
-python scripts/mn_markers.py essay.txt
-```
-
-Энэ бол зөвхөн туслах хэрэгсэл, эцсийн шийдвэр биш.
-
-## Хувь нэмэр оруулах
-
-Энэ skill-ийн хамгийн сул тал нь AI монгол хэлээр хэрхэн бичдэг тухай судалгаа бараг байхгүйд оршино. Тиймээс монгол хэлтэй хүмүүсийн бодит жишээ хамгийн үнэ цэнэтэй.
-
-1. AI-ийн бичсэн, орчуулга шиг эсвэл хуурай санагдсан текст олж харвал Issue нээж, текстээ болон аль хэсэг нь яагаад эвгүй санагдсаныг бичээрэй.
-2. Skill буруу засвар хийсэн бол (жишээ нь бүдүүлэг болгосон, хос үг хассан) мөн Issue нээгээрэй.
-3. Шинэ хэв маяг нэмэх бол `references/` доторх тохирох файлд "Before / After" жишээ, эх сурвалжийн хамт Pull Request илгээгээрэй.
-4. Скрипт өөрчилсөн бол `python -m unittest discover -s tests` ажиллуулна уу.
+Хиймэл оюун монголоор хэрхэн бичдэг талаар судалгаа одоогоор бараг байхгүй. Тиймээс энэ skill-ийг сайжруулахад монгол хүн бүрийн нүд, чих хамгийн үнэтэй. Орчуулга шиг, хуурай санагдсан текст таарвал, эсвэл skill буруу засвар хийвэл Issue нээж, аль хэсэг нь яагаад эвгүй санагдсаныг бичээд үлдээгээрэй. Шинэ хэв маяг нэмэх бол `references/` доторх файлд өмнөх ба дараах жишээ, эх сурвалжийн хамт Pull Request илгээнэ үү. Скрипт өөрчилсөн бол `python -m unittest discover -s tests` ажиллуулж шалгаарай.
 
 Эх сурвалжийн жагсаалт: [references/sources.md](references/sources.md).
 
@@ -84,31 +61,18 @@ python scripts/mn_markers.py essay.txt
 
 ## English
 
-An agent skill that edits AI-generated or translated Mongolian (Cyrillic) text following Mongolian stylistics (найруулга зүй), not English writing rules. Works in Claude Code, Codex, Cursor, and any harness that reads `SKILL.md`.
+An agent skill for editing AI-generated or translated Mongolian (Khalkha, Cyrillic). It follows Mongolian stylistics (найруулга зүй) rather than English writing advice, because "shorter, plainer, cut the formulas" makes Mongolian blunt and lopsided.
 
-**Why not just port an English humanizer?** English advice ("shorter, plainer, cut the formulas") makes Mongolian blunt and lopsided. Version 0.1 of this skill made exactly that mistake. Version 0.2 is rebuilt on principles from Mongolian stylistics and translation scholarship:
+It turns noun-heavy calques back into verbs, gives agentless passives their doer when the doer is known, removes redundant plurals, and joins choppy runs of identical endings with converbs. It leaves alone what is native: paired words, balanced and long converb sentences, fixed formal phrases, and particles like юм and шүү. It never makes a text ruder or lower in register, and never adds facts, sources, or opinions. Lifeless, generic voice and unsourced claims are flagged for the author, not papered over.
 
-1. The verb carries the sentence: turn noun + хийх back into the verb.
-2. The sentence skeleton must be Mongolian, not just the words (Rinchen: "Үг нь монгол, өгүүлбэр нь орос").
-3. Balance and paired words (хос үг) are virtues, not redundancy.
-4. Chain clauses with converbs; avoid runs of identical -сан endings.
-5. Fit the functional style; over-shortening is as much an error as over-ornament.
-6. Finite endings and particles carry evidential and stance meaning; keep them.
-7. Respect: a rewrite must never be blunter or lower in register than the original.
+Install with `npx skills add Batsuren02/mongolian-humanizer --global` or as a Claude Code plugin (see above), then run `/mongolian-humanizer`.
 
-It fixes noun-heavy calques, agentless passives, redundant plurals, choppy ending runs, calqued idioms, chatbot leftovers, and lifeless generic voice. It leaves formal formulas, paired words, long converb sentences, and particles alone, and never adds facts, sources, or opinions.
-
-Install with `npx skills add Batsuren02/mongolian-humanizer --global`, or as a Claude Code plugin (see above). Invoke with `/mongolian-humanizer`.
-
-### Credits
-
-- Mongolian principles: Ц.Сүхбаатар, Д.Отгонсүрэн, Пүрэв-Очир (via nairuulga.mn, National Council for Language Policy); Энхбаяр, Чулуунбаатар, Эрдэнэмаам, Шагдарсүрэн, Бүрнээ, Галсан (NUM translation studies); Brosig on evidentiality and particles. Full list in [references/sources.md](references/sources.md).
-- Structure and the no-fabrication rule: [blader/humanizer](https://github.com/blader/humanizer).
-- Ideas from other-language humanizers: humanizer-ru, [daleseo/korean-skills](https://github.com/daleseo/korean-skills), and the Chinese translationese essay on yage.ai.
+The principles come from Mongolian stylistics and translation scholarship (Сүхбаатар, Отгонсүрэн, Пүрэв-Очир, Энхбаяр, Чулуунбаатар, Эрдэнэмаам, Галсан and others); see [references/sources.md](references/sources.md). Structure and the no-fabrication rule follow [blader/humanizer](https://github.com/blader/humanizer).
 
 ### Changelog
 
-- **0.2.0**: rebuilt on Mongolian stylistics. Dropped English-derived "AI phrase" lists that flagged normal formal Mongolian. Added the seven principles, register and tone guard, evidence tags, verified translationese patterns, and a sources list. The marker script no longer flags formulas, topic "нь", or connectives.
+- **0.2.1**: second review. Resolved rule conflicts (legal text, paired-word plurals, merging, chatbot phrases, emoji, quotes), fixed examples that changed meaning or invented an actor, and rewrote this README in natural Mongolian.
+- **0.2.0**: rebuilt on Mongolian stylistics; dropped English "AI phrase" lists that flagged normal formal Mongolian.
 - **0.1.0**: first version, adapted from English humanizer rules.
 
 ## License

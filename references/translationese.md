@@ -7,9 +7,13 @@ AI Mongolian is mostly translationese: the model builds an English (and, through
 The main mark (Энхбаяр 2014; Шагдарсүрэн 2009; see principle 1). Event nouns with болох/явагдах are native and stay: "хурал болно", "сургалт явагдана", "тэмцээн боллоо".
 
 > **Before:** Өчигдөр сайд нартай ярилцлага хийв. Ярилцлагын үеэр шинэ хуулийн талаар санал солилцоо явагдсан.
-> **After:** Өчигдөр сайд нартай уулзаж, шинэ хуулийн талаар санал солилцов.
+> **After:** Өчигдөр сайд нартай шинэ хуулийн талаар ярилцаж, санал солилцов.
 
-More: хүйтрэлт явагдах → хүйтрэх; мал төллөлт явагдах → мал төллөх; цөлжилт болжээ → цөлжжээ; итгэлтэй байна → итгэж байна.
+(Here "ярилцлага" means talks, not an interview. The first sentence's -в stays as the one finite ending.)
+
+More: хүйтрэлт явагдах → хүйтрэх; мал төллөлт явагдах → мал төллөх; цөлжилт болсон → цөлжсөн.
+
+**Keep established terms**, especially in legal and official text: "татварын хөнгөлөлт үзүүлэх", "захиалга хийх", "дүгнэлт гаргах", "итгэлтэй байна". Test: if the plain verb would change the meaning or lose a term (ярилцлага "interview" is not ярилцах "talk"), keep the noun. The fault is a noun frame where the plain verb says exactly the same thing.
 
 ## T2. Agentless passive (-гд-) [эх сурвалж]
 
@@ -20,14 +24,14 @@ English and Russian favour the passive, Mongolian the active (Энхбаяр). N
 | НҮБ-ээр зохион байгуулагдсан хурал | НҮБ-ын зохион байгуулсан хурал |
 | Хурлаар асуудлууд хөндөгджээ | Хурлаар ... асуудлыг хөнджээ |
 | Ажил зохион байгуулагдлаа | ... ажил зохион байгууллаа |
-| Концерт тоглогдоно | Концерт тоглоно |
+| Концерт тоглогдоно | Концерт болно; (хамтлаг) концерт тоглоно |
 | Энэ ном нэрт зохиолчоор бичигдсэн | Энэ номыг нэрт зохиолч бичсэн |
 
 **Keep:** native -гд- on perception and spontaneous verbs (харагдах, санагдах, бодогдох, сонсогдох), and the passive when the doer is truly unknown or in academic text.
 
 ## T3. New -лт coinages and -лт chains [эх сурвалж]
 
-Бүрнээ lists translator coinages that multiply -лт nouns: хууралт, хүлээлт, чагналт, товшилт, өвдөлт, цохилт, таталт, where Mongolian would use the verb. Шагдарсүрэн ties the -лт surge to copying Russian and English sentence structure.
+Бүрнээ lists -лт nouns that translators multiply where the source sentence would read naturally with a verb: хууралт, хүлээлт, чагналт, товшилт, өвдөлт, цохилт, таталт. Шагдарсүрэн ties the -лт surge to copying Russian and English sentence structure. Many of these are established words today (өвдөлт, хүлээлт); the fault is the noun-for-verb sentence, not the word: "Түүний хүлээлт удаан үргэлжилсэн" where "Тэр удаан хүлээсэн" says it plainly.
 
 > **Before:** Хамтын ажиллагааны сайжруулалт хийгдэх болно.
 > **After:** Хамтын ажиллагаагаа сайжруулах болно.
@@ -35,7 +39,7 @@ English and Russian favour the passive, Mongolian the active (Энхбаяр). N
 (The formal "-х болно" future stays; only the noun + passive frame was the fault.)
 
 > **Before:** Төслийн хэрэгжилтийн үр дүнгийн үнэлгээ хийгдсэн.
-> **After:** Төсөл хэр үр дүнтэй хэрэгжсэнийг үнэлсэн.
+> **After:** Төслийн хэрэгжилтийн үр дүнг үнэлсэн.
 
 Also malformed pairs from translation: "зовлон шаналан" → "зовлон шаналал"; "сэтгэлийн энэлэн" → "сэтгэлийн энэлэл".
 
@@ -47,13 +51,13 @@ Also malformed pairs from translation: "зовлон шаналан" → "зов
 
 Fix by saying it the Mongolian way **[дүгнэлт: suggestions, not from the sources]**:
 - хонгилын үзүүрт гэрэл харагдлаа → найдвар төрлөө, гарц харагдлаа
-- инфляцийг нэг оронтой тоонд барих → инфляцийг 10 хувиас доош барих
-- Ийм мэдрэмж төрлөө → Тийм санагдлаа; сэтгэл нэг л ...
-- мэдрэмж авмаар байна → мэдэрмээр байна, үзмээр байна
+- инфляцийг нэг оронтой тоонд барих → инфляцийг 10 хувиас доош барих (same meaning: a single-digit rate is below 10%)
+- Ийм мэдрэмж төрлөө → Ийм сэтгэгдэл төрлөө
+- мэдрэмж авмаар байна → мэдэрмээр байна
 
 ## T5. Redundant plural [эх сурвалж]
 
-Plural suffixes are optional in Mongolian. Отгонсүрэн (via Пүрэв-Очир, nairuulga.mn): no plural after a numeral, a quantifier, a collective, or inside a paired word.
+Plural suffixes are optional in Mongolian. Отгонсүрэн (via Пүрэв-Очир, nairuulga.mn): no plural after a numeral, a quantifier, or a collective, and none on a collective pair of things (хонь мал, ололт амжилт, эд хөрөнгө).
 
 | Translated | Mongolian |
 |---|---|
@@ -63,7 +67,9 @@ Plural suffixes are optional in Mongolian. Отгонсүрэн (via Пүрэв-
 | ололт амжилтууд | ололт амжилт |
 | хонь малуудаа | хонь малаа |
 
-**Keep:** plural on people without a quantifier when it marks the group ("багш нар", "эцэг эхчүүд", "хүүхдүүд").
+**Keep:** plural on people without a quantifier when it marks the group ("багш нар", "эцэг эхчүүд", "хүүхдүүд"), including pairs naming people.
+
+Also: "олон судлаачдын" → "олон судлаачийн"; "120 багш нар" → "120 багш".
 
 ## T6. Word order copied from English [эх сурвалж]
 
@@ -80,7 +86,7 @@ Translators advise using pronouns sparingly: Mongolian is not "bombarded" with p
 
 ## T8. English quote structure [зөвлөмж]
 
-Fold a split quote into one sentence ending in "гэж ... хэлэв" (unread.today).
+Fold a split quote into one sentence ending in "гэж ... хэлэв" (unread.today). Change only the framing, and only in translated text. Never change the words inside the quotation.
 
 > **Before:** "Би удахгүй гэртээ харина." гэж Жон хэлэв. "Тэгээд хүүхдүүдээ тэвэрнэ."
 > **After:** "Удахгүй гэртээ хариад хүүхдүүдээ тэвэрнэ" гэж Жон хэлэв.

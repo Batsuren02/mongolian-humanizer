@@ -55,6 +55,9 @@ class NounVerbTest(unittest.TestCase):
         self.assertEqual(m.check_noun_verb("Сургалт 10 дугаар сарын 20-нд явагдана."), [])
         self.assertEqual(m.check_noun_verb("Сургалт явагдана."), [])
 
+    def test_established_terms_not_flagged(self):
+        self.assertEqual(m.check_noun_verb("Татварын хөнгөлөлт үзүүлнэ. Захиалга хийх боломжтой."), [])
+
     def test_lexicalised_noun_without_hiih_is_fine(self):
         self.assertEqual(m.check_noun_verb("Уулзалт амжилттай болов. Сургалтад хамрагдсан."), [])
 
@@ -80,6 +83,17 @@ class GrammarTest(unittest.TestCase):
         hits = m.check_ni_overuse("Хөтөлбөр нь сурагчид нь тусалдаг. Би ирлээ.")
         self.assertEqual(len(hits), 1)
 
+    def test_parallel_contrastive_ni_is_native(self):
+        text = "Үг нь зөв, дүрэм нь алдаагүй мөртлөө өгүүлбэр нь монгол биш."
+        self.assertEqual(m.check_ni_overuse(text), [])
+
+    def test_ni_inside_quotes_is_ignored(self):
+        text = 'Тэр "Үг нь монгол, өгүүлбэр нь орос" гэж хэлсэн нь зөв.'
+        self.assertEqual(m.check_ni_overuse(text), [])
+
+    def test_stacked_ni_in_one_clause(self):
+        self.assertEqual(len(m.check_ni_overuse("Энэ хөтөлбөр нь сурагчдын мэдлэг нь дээшлэхэд нь тусалдаг.")), 1)
+
     def test_one_ni_per_sentence_is_native(self):
         text = "Хууль нь батлагдсан. Шүүх нь шийдсэн. Иргэд нь баярласан."
         self.assertEqual(m.check_ni_overuse(text), [])
@@ -93,6 +107,13 @@ class GrammarTest(unittest.TestCase):
     def test_plural_after_quantifier(self):
         hits = m.check_quantifier_plural("Олон хүмүүс ирсэн. Бүх оюутнууд суусан. Гурван ном авлаа.")
         self.assertEqual(len(hits), 2)
+
+    def test_plural_forms_with_case_endings(self):
+        text = "Олон судлаачдын үзэж байгаагаар. 23 ажилчид ирэв. Зарим оюутнуудын санал. 120 багш нар суув."
+        self.assertEqual(len(m.check_quantifier_plural(text)), 4)
+
+    def test_words_containing_plural_letters_are_not_plurals(self):
+        self.assertEqual(m.check_quantifier_plural("Олон буудал байна. Хоёр хуудас бичлээ."), [])
 
     def test_group_plural_without_quantifier_is_native(self):
         self.assertEqual(m.check_quantifier_plural("Багш нар, эцэг эхчүүд ирэв."), [])

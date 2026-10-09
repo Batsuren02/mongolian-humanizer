@@ -33,10 +33,12 @@ def _compile(pattern: str) -> re.Pattern[str]:
 # T1/T3: lexicalised noun (-лт, -лга) + a light verb where Mongolian uses the verb.
 NOUN_VERB = _compile(
     r"(?<!{w})({w}+(?:лт|лага|лэг|лого|лөг|лга|лгэ))\s+"
-    r"(хийгд{w}*|явагд{w}*|үзүүл{w}*|хий(?:в|лээ|сэн|нэ|х|ж|дэг|гээд)?)(?!{w})"
+    r"(хийгд{w}*|явагд{w}*|хий(?:в|лээ|сэн|нэ|х|ж|дэг|гээд)?)(?!{w})"
 )
 # Event nouns: "сургалт явагдана", "хэлэлцүүлэг явагдлаа" are native.
 EVENT_NOUNS = ("сургалт", "уулзалт", "ярилцлага", "хэлэлцүүлэг", "үзэсгэлэн", "сонгон шалгаруулалт")
+# Established collocations with хийх ("захиалга хийх") are everyday Mongolian.
+ESTABLISHED_HIIH = ("захиалга",)
 
 # T2: passive -гд- with a finite or participle ending.
 PASSIVE = _compile(
@@ -54,7 +56,15 @@ QUANTIFIERS = (
     "олон|бүх|зарим|ихэнх|хэд хэдэн|цөөн|цөөхөн|"
     "хоёр|гурван|дөрвөн|таван|зургаан|долоон|найман|есөн|арван|\\d+"
 )
-PLURAL = r"{w}+(?:ууд|үүд|нууд|нүүд|чууд|чүүд)(?!{w})|хүмүүс|{w}+ нар(?!{w})"
+# Plural stems (-ууд/-үүд, -чид, -чд-, нар, хүмүүс) with an optional case ending.
+# Case endings are listed explicitly so words like "буудал" do not match.
+CASE = "ын|ийн|ад|эд|ыг|ийг|тай|тэй|аас|ээс|аар|ээр|аа|ээ"
+PLURAL = (
+    r"{w}+(?:ууд|үүд|чид)(?:" + CASE + r")?(?!{w})"
+    r"|{w}+чд(?:ын|ад|эд|аас|ээс)(?!{w})"
+    r"|хүмүүс{w}*"
+    r"|{w}+ нар(?:ын|т|тай|аас)?(?!{w})"
+)
 QUANT_PLURAL = _compile(
     rf"(?<!{{w}})(?:{QUANTIFIERS})\s+(?!улсын)(?:{{w}}+\s+)?(?:{PLURAL})"
 )
@@ -81,6 +91,7 @@ CHATBOT_PHRASES = (
 )
 ATTRIBUTION_PHRASES = (
     "судлаачдын үзэж байгаагаар",
+    "судлаачийн үзэж байгаагаар",
     "мэргэжилтнүүдийн хэлснээр",
     "судалгаагаар батлагдсан",
     "эрдэмтэд үздэг",
@@ -112,8 +123,14 @@ def check_noun_verb(text: str) -> list[str]:
     return [
         m.group(0)
         for m in NOUN_VERB.finditer(text)
-        if not (m.group(2).lower().startswith("явагд") and m.group(1).lower() in EVENT_NOUNS)
+        if not _is_native_collocation(m.group(1).lower(), m.group(2).lower())
     ]
+
+
+def _is_native_collocation(noun: str, verb: str) -> bool:
+    if verb.startswith("явагд"):
+        return noun in EVENT_NOUNS
+    return verb.startswith("хий") and not verb.startswith("хийгд") and noun in ESTABLISHED_HIIH
 
 
 def check_passive(text: str) -> list[str]:
@@ -129,9 +146,22 @@ def check_quantifier_plural(text: str) -> list[str]:
     return [m.group(0) for m in QUANT_PLURAL.finditer(text)]
 
 
+QUOTED = re.compile(r'"[^"]*"|«[^»]*»|“[^”]*”')
+CLAUSE_BREAK = re.compile(r",|;|\s(?:мөртлөө|харин|боловч|гэвч)\s")
+
+
 def check_ni_overuse(text: str) -> list[str]:
-    """Sentences with two or more standalone "нь". One per sentence is native."""
-    return [s for s in split_sentences(text) if len(NI.findall(s)) >= 2]
+    """Sentences where one clause stacks two or more standalone "нь".
+
+    Parallel contrastive "нь" across balanced clauses ("Үг нь монгол,
+    өгүүлбэр нь орос") is native, and quoted text is left alone.
+    """
+    hits = []
+    for sentence in split_sentences(text):
+        clauses = CLAUSE_BREAK.split(QUOTED.sub(" ", sentence))
+        if any(len(NI.findall(c)) >= 2 for c in clauses):
+            hits.append(sentence)
+    return hits
 
 
 def check_doubled_possessive(text: str) -> list[str]:

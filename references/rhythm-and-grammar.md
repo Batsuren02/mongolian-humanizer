@@ -7,9 +7,11 @@
 Fix: chain same-subject actions with converbs (-ж, -аад, -вал, -тал), and vary finite endings by meaning (-лаа, -в, -жээ, -сан, -даг, -на), not at random.
 
 > **Before:** Эцэг эхчүүд хуралд ирсэн. Тэд санал хэлсэн. Багш нар саналыг хүлээн авсан.
-> **After:** Хуралд ирсэн эцэг эхчүүд санал хэлж, багш нар саналыг нь хүлээн авлаа.
+> **After:** Хуралд ирсэн эцэг эхчүүд санал хэлж, багш нар саналыг нь хүлээн авсан.
 
-Merge only when the sentences share a subject and describe a sequence, or when the endings repeat. Do not merge sentences with different subjects into a converb chain that breaks the reflexive logic (same-subject chains take -аа/-ээ; different subjects do not). Short sentences with different subjects and varied endings are fine as they are.
+(One finite verb remains, so the -сан ending stays as in the original.)
+
+A run means three or more consecutive sentences with the same ending. Merge when sentences share a subject and form a sequence, or when they form a run. With different subjects (as above), join with -ж or "бөгөөд"; never use -аад/-н or a reflexive -аа/-ээ that would point to the wrong subject. Short sentences with different subjects and varied endings are fine as they are.
 
 ## R2. Choppy one-clause sentences [эх сурвалж + дүгнэлт]
 
@@ -19,16 +21,16 @@ A six-clause converb sentence split into five simple sentences was judged worse 
 
 Style textbooks give a sentence with four "нь" as a redundancy error, and "Таны бие лагшин тань" as a doubled possessive. Also "нь, маань, минь" stacked: "Их сургуульд орох нь амьдралын маань зорилго минь байсан."
 
-> **Before:** Энэ хөтөлбөр нь сурагчид нь мэдлэгээ нь дээшлүүлэхэд нь тусалдаг.
-> **After:** Энэ хөтөлбөр сурагчдад мэдлэгээ дээшлүүлэхэд нь тусалдаг.
+> **Before:** Энэ хөтөлбөр нь сурагчдын мэдлэг нь дээшлэхэд нь тусалдаг.
+> **After:** Энэ хөтөлбөр сурагчдын мэдлэгийг дээшлүүлэхэд тусалдаг.
 
-**Keep "нь"** as topic marker ("Боловсрол нь ..."), in "учир нь", for kinship ("ээж нь"), for contrast, and once per clause where it reads naturally. One "нь" per sentence is normal Mongolian, not a tell.
+**Keep "нь"** as topic marker ("Боловсрол нь ..."), in "учир нь", for kinship ("ээж нь"), and once per clause where it reads naturally. Parallel contrastive "нь" across balanced clauses is native rhetoric, as in Ринчен's own "Үг нь монгол, өгүүлбэр нь орос". The fault is "нь" stacked inside one clause.
 
 ## R4. Single-word redundancy [эх сурвалж]
 
 Journalism stylistics (үг илүүдсэн алдаа): "Маш их завгүй" → "Маш завгүй"; "хууль бусаар хулгайлсан" → "хулгайлсан". These are word-level trims. They do not license cutting clauses, pairs, or formulas.
 
-## R5. "маш" and "болон" [зөвлөмж]
+## R5. "маш", and "болон" in lists [зөвлөмж]
 
 Translator advice (unread.today):
 - Use "маш" sparingly; where emphasis is real, vary with нэн, тун, асар, үлэмж.
@@ -37,8 +39,9 @@ Translator advice (unread.today):
 ## R6. Endings carry meaning [эх сурвалж: Brosig]
 
 Do not swap finite endings for variety alone:
-- -жээ (indirect, learned) vs -сан (established) vs -лаа (just witnessed) change how the writer claims to know.
+- -жээ (indirect, learned) vs -сан (established) vs -лаа (direct, usually recent or personal) change how the writer claims to know.
 - -даг (habitual, general) vs -на (expected, future).
 - "юм" adds conviction. "-даг юм" in a general statement is a deliberate stance; keep it.
 - "-х болно" is a native formal future. In formal text, do not flatten it to "-на".
 - "-лаа" is normal in first-person narration of the writer's own experience, even for last summer ("Өнгөрсөн зун ... тойрч ирлээ"). Do not "correct" it to -сан.
+- Mixing -сан and -лаа for the same event is normal (a settled judgement beside vivid narration). Do not harmonize them.

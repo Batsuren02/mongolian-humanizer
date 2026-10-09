@@ -8,10 +8,11 @@ description: |
   naturalize, or humanize Mongolian essays, letters, posts, or reports (эсээ,
   албан бичиг, пост, нийтлэл, тайлан). Keeps the register and politeness of the
   original; fixes noun-heavy calques, agentless passives, redundant plurals,
-  clumsy -сан runs, and lifeless generic voice.
+  and clumsy -сан runs; flags lifeless generic voice and unsourced claims.
+  Scope: Khalkha Mongolian in Cyrillic script.
 license: MIT
 metadata:
-  version: "0.2.0"
+  version: "0.2.1"
   based_on: https://github.com/blader/humanizer
 ---
 
@@ -34,12 +35,12 @@ Mongolian stylistics has its own principles. Follow them.
 
 Details, examples, and sources: [references/mongolian-principles.md](references/mongolian-principles.md).
 
-1. **Үйл үг бол амин сүнс. The verb carries the sentence.** Mongolian grammarians call the verb the soul of the language. Translated text is noun-heavy: "ярилцлага хийв" for "ярилцав", "туршилт хийгдэх" for "турших", "итгэлтэй байна" for "итгэж байна". Turn noun + хийх/хийгдэх back into the verb, and a process noun + явагдах/болох ("хүйтрэлт явагдах", "цөлжилт болох") too. Event nouns with болох/явагдах are native: "хурал болно", "сургалт явагдана".
+1. **Үйл үг бол амин сүнс. The verb carries the sentence.** Mongolian grammarians call the verb the soul of the language. Translated text is noun-heavy: "уулзалт хийлээ" for "уулзлаа", "туршилт хийгдэх" for "турших". Turn noun + хийх/хийгдэх back into the verb, and a process noun + явагдах/болох ("хүйтрэлт явагдах", "цөлжилт болох") too. Event nouns with болох/явагдах are native: "хурал болно", "сургалт явагдана". Established terms stay, especially in legal and official text ("татварын хөнгөлөлт үзүүлэх", "захиалга хийх"). Test: if the plain verb would change the meaning or lose a term (ярилцлага "interview" is not ярилцах "talk"), keep the noun.
 2. **Үг нь монгол, өгүүлбэр нь монгол. The skeleton must be Mongolian too.** Rinchen's verdict on a bad translation was "Үг нь монгол, өгүүлбэр нь орос байна." Fix the sentence shape (agentless passives, English/Russian word order, redundant plurals), not just words. Method: read the sentence, look away, and say the meaning the way a Mongolian would.
 3. **Тэгш хэм, хорших ёс. Balance.** Сүхбаатар names "сондгойруулахгүй зарчим" (keep it even) a core rule of Mongolian style. Paired words (хос үг: эрх үүрэг, гэм буруу, инээд хөөр, ах дүү) and balanced parallel clauses are native virtues that warm and soften prose. Never collapse them as "redundant". Never leave a single curt clause where the original was balanced.
 4. **Нөхцөл үйл үгээр холбо. Chain with converbs.** Native prose links actions with -ж, -аад, -вал, -тал, -хаар into one verb-final sentence. Rinchen merged short Russian sentences into longer Mongolian ones. A run of one-clause sentences all ending -сан/-лаа is clumsy (болхи). Mix long and short sentences; do not chop everything short.
 5. **Зохистой бай. Fit the style, neither ornate nor curt.** Mongolian has five functional styles and a three-step word ladder (эрхэмсэг / ерийн / доромж: зооглох / идэх / гудрах). Over-ornament (хэт чамирхах) is an error, and so is over-shortening (үг дутсан алдаа). Fixed formulas (тогтсон хэллэг) are normal language, especially in official and newspaper style.
-6. **Төгсгөл, сул үг утга агуулна. Endings and particles carry meaning.** Finite endings mark how the writer knows something (-сан established, -лаа witnessed just now, -жээ learned indirectly, -даг habitual). Particles carry stance: "юм" strengthens conviction; "билээ", "шүү", "даа", "л", "ч" add nuance. Do not strip them to make text "cleaner".
+6. **Төгсгөл, сул үг утга агуулна. Endings and particles carry meaning.** Finite endings mark how the writer knows something (-сан established, -лаа direct and usually recent or personal, -жээ learned indirectly, -даг habitual). Particles carry stance: "юм" strengthens conviction; "билээ", "шүү", "даа", "л", "ч" add nuance. Do not strip them to make text "cleaner".
 7. **Хүндэтгэл. Respect.** Keep "Та" where the original uses it, keep courtesy formulas, never drop a word to a lower rung, never label people, and keep the original's softening ("гэж үзэж байна", "болов уу").
 
 ## Hard rules
@@ -53,20 +54,20 @@ Details, examples, and sources: [references/mongolian-principles.md](references/
 
 ## What actually needs fixing
 
-Each item is backed by Mongolian translation or stylistics sources (see the reference files). These are the real problems, roughly in order of how often they matter:
+The first seven rows are documented by Mongolian translation and stylistics scholars; lifeless voice comes from a Mongolian editor's critique; chatbot leftovers and typography are general AI residue. Evidence tags are in each reference file. Roughly in order of how often they matter:
 
 | Problem | Example | Reference |
 |---|---|---|
 | Noun + хийх/хийгдэх (or a process noun + явагдах) instead of a verb | "уулзалт хийлээ" → "уулзлаа" | [translationese.md](references/translationese.md) |
 | Agentless passive (-гдсан) copied from English/Russian | "НҮБ-ээр зохион байгуулагдсан хурал" → "НҮБ-ын зохион байгуулсан хурал" | translationese.md |
 | New -лт coinages and -лт chains | "хамтын ажиллагааны сайжруулалт хийгдэнэ" → "хамтын ажиллагаагаа сайжруулна" | translationese.md |
-| Plural after a numeral, quantifier, or collective | "олон номууд", "ололт амжилтууд" → "олон ном", "ололт амжилт" | [rhythm-and-grammar.md](references/rhythm-and-grammar.md) |
-| Runs of identical endings, short choppy sentences | "...сан. ...сан. ...сан." → chain with -ж/-аад | rhythm-and-grammar.md |
+| Plural after a numeral, quantifier, or collective | "олон номууд", "ололт амжилтууд" → "олон ном", "ололт амжилт" | translationese.md |
+| Runs of identical endings, short choppy sentences | "...сан. ...сан. ...сан." → chain with -ж/-аад | [rhythm-and-grammar.md](references/rhythm-and-grammar.md) |
 | Piled-up "нь" and doubled possessives | "Таны бие лагшин тань" | rhythm-and-grammar.md |
 | Calqued idioms | "хонгилын үзүүрт гэрэл харагдах", "мэдрэмж авмаар байна" | translationese.md |
-| Lifeless, generic voice with no angle | Polished but says nothing of the author's own | [voice.md](references/voice.md) |
+| Lifeless, generic voice with no angle (flag it; do not invent content) | Polished but says nothing of the author's own | [voice.md](references/voice.md) |
 | Chatbot leftovers and AI formatting | "Мэдээжийн хэрэг!", em dashes, emoji headers, bold-label lists | voice.md, [typography.md](references/typography.md) |
-| Invented or misspelled words | a word no Mongolian dictionary has | see Spellcheck below |
+| Invented or misspelled words in AI-generated text | a word no Mongolian dictionary has | see Spellcheck below; in the user's own writing, only if asked |
 
 ## What is NOT a problem
 
@@ -77,7 +78,8 @@ Read [references/false-positives.md](references/false-positives.md) before any s
 - Lexicalised -лт nouns (ярилцлага, уулзалт, сургалт) used as nouns. Only replacing a verb with noun + хийх is the fault.
 - Particles and stance endings (юм, билээ, шүү, -даг юм).
 - Native -гд- on perception verbs (харагдах, санагдах, бодогдох).
-- Plural on people without a numeral when it marks a group ("багш нар", "эцэг эхчүүд").
+- Plural on people without a numeral or quantifier when it marks a group ("багш нар", "эцэг эхчүүд").
+- Mixed -сан and -лаа for the same event; established noun + verb terms ("захиалга хийх", "итгэлтэй байна").
 
 ## Register: decide first
 
@@ -86,6 +88,7 @@ Details: [references/register-and-tone.md](references/register-and-tone.md).
 | Style | Монгол нэр | Natural looks like |
 |---|---|---|
 | Official | Албан бичгийн найруулга | Fixed formulas, literal words, no imagery, polite address, two parts: grounds, then request or decision |
+| Legal | Хууль зүйн бичвэр | Laws, regulations, contracts. Terms and structure are fixed: do not restyle; flag calques instead of rewriting |
 | Academic | Шинжлэх ухааны | Precise terms, long compound sentences, some nominalisation is normal |
 | Newspaper / public | Сонин нийтлэлийн | Plain and clear, stock phrases are normal, a little vivid language is welcome |
 | Literary | Уран зохиолын | Imagery, synonyms, alliteration, proverbs, rhythm |
@@ -97,13 +100,13 @@ School essays (эсээ) sit between newspaper and literary: Mongolian curricula
 
 Decide by how much translationese and lifelessness you find, not by how formal the text is:
 
-- **Light (most texts):** fewer than one real problem per three sentences, or none. Fix only those spots; often nothing at all.
+- **Light (most texts):** at most one real problem per three sentences, or none. Fix only those spots; often nothing at all.
 - **Selective:** real problems in up to about half the sentences. Rework those sentences; leave the rest word for word.
 - **Full:** more than half the sentences have a translated skeleton. Re-say each paragraph in Mongolian from its meaning, keeping register, balance, and every fact.
 
 **Meaning stays fixed.** Never change modality or aspect while fixing style: "хөгжүүлэх боломжтой болдог" (gets the chance to develop) is not "хөгжүүлдэг" (develops). "-х болно" is a native formal future; do not flatten it to "-на" in formal text.
 
-**Merging sentences.** Merge consecutive sentences into a converb chain only when they share a subject and describe a sequence, or when they form a run of identical endings (rhythm-and-grammar.md R1). Short sentences with different subjects and varied endings stay as they are.
+**Merging sentences.** Merge only when (a) consecutive sentences share a subject and describe a sequence, or (b) three or more consecutive sentences end the same way (rhythm-and-grammar.md R1). With different subjects, join with -ж or "бөгөөд", never with -аад/-н or a reflexive that would point to the wrong subject. Short sentences with different subjects and varied endings stay as they are.
 
 If Python is available, `scripts/mn_markers.py <file>` counts mechanical markers (noun+хийх, passives, redundant plurals, ending runs, chatbot leftovers, typography). It is a floor, not a verdict.
 
@@ -112,11 +115,12 @@ If Python is available, `scripts/mn_markers.py <file>` counts mechanical markers
 1. **Register.** Pick the style (table above). If unclear, choose the closest and say so in one line.
 2. **Read as a Mongolian reader.** Is it already acceptable? What, specifically, sounds translated or dry?
 3. **Find the real problems** using the reference files. Ignore anything listed in false-positives.md.
-4. **Rewrite** at the right level. Turn nouns back into verbs, give passives their doer, chain clauses with converbs, keep paired words and balance, keep endings and particles.
+4. **Rewrite** at the right level. Turn nouns back into verbs, give passives their doer, chain clauses where the merging rule allows, keep paired words and balance, keep endings and particles, and keep the original's word choice wherever it was not the problem.
 5. **Audit.** Answer briefly:
    - "Өгүүлбэрийн бүтэц монгол уу?" Is every sentence skeleton Mongolian?
    - "Эх бичвэрт байхгүй баримт нэмсэн үү?" Did I add any fact, source, or opinion?
    - "Өнгө аяс доошилсон уу?" Is anything blunter, colder, lower in register, or more lopsided than the original? Did I label people or drop "юм", "Та", or a softener?
+   - "Утга өөрчлөгдсөн үү?" Did any verb change meaning (хөндөх → ярилцах), or any ending change evidential or tense (-сан → -лаа) without a reason? Is every change listed in Засвар хийсэн зүйлс?
 6. **Final.** Fix what the audit found.
 
 ## Spellcheck (optional)
@@ -143,4 +147,4 @@ Write labels and explanations in the language the user used with you.
 
 ## Sources
 
-Every principle and pattern in this skill comes from Mongolian stylistics and translation scholarship (Сүхбаатар, Отгонсүрэн, Пүрэв-Очир via nairuulga.mn; Энхбаяр, Чулуунбаатар, Эрдэнэмаам, Шагдарсүрэн, Галсан, Бүрнээ in NUM translation studies; Brosig on evidentiality and particles). Full list with links: [references/sources.md](references/sources.md). There is little published research on how AI models specifically write Mongolian, so this skill treats the evidence-backed marks of translationese and lifeless prose as the target, not English "AI tell" lists.
+The seven principles come from Mongolian stylistics and translation scholarship (Сүхбаатар, Отгонсүрэн, Пүрэв-Очир via nairuulga.mn; Энхбаяр, Чулуунбаатар, Эрдэнэмаам, Шагдарсүрэн, Галсан, Бүрнээ in NUM translation studies; Brosig on evidentiality and particles). Patterns in the reference files are tagged [эх сурвалж] (sourced), [зөвлөмж] (translator advice), or [дүгнэлт] (this skill's inference). Full list with links: [references/sources.md](references/sources.md). There is little published research on how AI models specifically write Mongolian, so this skill treats the evidence-backed marks of translationese and lifeless prose as the target, not English "AI tell" lists.

@@ -9,9 +9,14 @@
 - Structure: first the purpose and grounds, then the proposal, request, or decision.
 - Formulas belong here: "Иймд ...-ыг хүсье", "...-ыг танилцуулж байна", "-тэй холбогдон", "үндсэн дээр", "Хүндэтгэсэн". Petitions address the recipient with "Танаа".
 - Repetition of a term is allowed (precision beats variety).
-- Email: be brief, skip ceremonial greetings ("ёсорхуу мэндчилгээ").
+- Email: when writing a new email, be brief and skip ceremonial greetings ("ёсорхуу мэндчилгээ"). When editing, never remove a greeting or courtesy formula the author wrote.
 
 **What to fix here:** noun + хийх/хийгдэх, agentless passives, -лт chains that hide who does what. **What not to touch:** the formulas, "Та", the formal rung, balanced pairs like "өргөжүүлэн бэхжүүлэх".
+
+### Хууль зүйн бичвэр (legal: laws, regulations, contracts)
+
+- Terms, structure, and repetition are fixed by law and practice ("хуулийн этгээд", "татварын хөнгөлөлт үзүүлэх").
+- **Do not restyle.** Remove chatbot leftovers; fix misspellings only in AI-generated text. Put any calque or unclear wording in Анхаарах for the author or a lawyer to decide.
 
 ### Шинжлэх ухааны найруулга (academic)
 
@@ -23,7 +28,7 @@
 ### Сонин нийтлэлийн найруулга (newspaper, public writing)
 
 - Plain and comprehensible; stock phrases are normal (Сүхбаатар); a little moving, vivid language used fittingly makes it stronger.
-- News sentences over about 25 words are risky (journalism textbook advice, news only).
+- News sentences over about 25 words are risky (journalism textbook advice for news reports only; elsewhere, long converb sentences are fine).
 
 ### Уран зохиолын найруулга (literary)
 

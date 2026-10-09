@@ -23,13 +23,15 @@ Benchmarks find models write fluent Mongolian while the content is weaker than i
 - Flag claims that look invented: unsourced statistics, "судлаачдын үзэж байгаагаар" with no researcher, quotes with no speaker.
 - Never strengthen a doubtful claim while rewriting it.
 
-## V3. Chatbot leftovers (always remove)
+## V3. Chatbot leftovers (remove when they address a chat user)
 
-Replies to a user that ended up in the content:
+Replies to a chat user that leaked into the content. Remove them when they speak to "the user" rather than to the text's real reader:
 - "Мэдээж!", "Мэдээжийн хэрэг!", "Маш сайн асуулт байна!"
 - "Танд тусалсандаа баяртай байна", "Энэ нь танд тустай байх гэж найдаж байна"
 - "Хэрэв нэмэлт мэдээлэл хэрэгтэй бол хэлээрэй", "Доор ...-ыг хүргэж байна"
 - "Одоо ...-ыг дэлгэрэнгүй авч үзье", "Ингээд ...-ын талаар ярилцъя" (signposting)
+
+**Keep:** "мэдээжийн хэрэг" used mid-text as ordinary "of course"; "Хэрэв нэмэлт мэдээлэл хэрэгтэй бол холбогдоорой" as a closing in a real service or business letter; signposting in a speech or lecture.
 
 ## V4. Over-claiming words [дүгнэлт, use judgment]
 
