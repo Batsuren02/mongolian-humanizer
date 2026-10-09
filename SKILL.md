@@ -64,7 +64,7 @@ Details and sources: [references/mongolian-principles.md](references/mongolian-p
 - template placeholders: keep, and list them in Анхаарах
 - piled-up sentence-initial Мөн, Иймд, Юуны өмнө: keep about one per five sentences
 - generic "-даг" truths, "хэрэгтэй" prescriptions, unnamed experts: flag; never invent the example or the expert
-- repeated "-х боломжтой": keep the one that means something
+- repeated "-х боломжтой": let one cover a converb chain; never drop a "can" that carries meaning
 
 Emoji headers, bold-label lists, and dashes: [references/typography.md](references/typography.md).
 
@@ -101,7 +101,7 @@ Removing chat framing and adding notes do not raise the level. Merge sentences o
 4. **Засварласан хувилбар:** the final text, ready to copy.
 5. **Анхаарах** (optional): placeholders to fill, claims to verify, where the author's own view would help.
 
-- **Nothing to change:** end Дүгнэлт with "засвар шаардлагагүй" and skip 2 and 4.
+- **Nothing to change:** end Дүгнэлт with "засвар шаардлагагүй", skip 2 and 4, and do not repeat the text. Removing a chatbot wrapper is a change: list it and give the clean text.
 - **Several versions** ("Хувилбар 1, 2"): remove the wrapper lines, keep the versions apart, edit each lightly.
 - **Files:** edit the prose in place; leave code, links, and data alone.
 - **Embedded use, or "final text only":** output only the final text.

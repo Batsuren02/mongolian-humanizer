@@ -111,4 +111,4 @@ These appeared in earlier drafts but no Mongolian source confirms them as faults
 - "Энэ нь ... юм" sentence frames. These are native.
 - "өөрийн/өөрсдийн" + reflexive -аа ("өөрийн биеэ"). Often native.
 - "Зохион байгуулах" itself is a native compound verb. Only the passive "зохион байгуулагдсан" is a documented calque.
-- "-х боломжтой" ("танилцах боломжтой", "хөгжүүлэх боломжтой болдог"). Usually native, and it carries real meaning (opportunity, possibility). Never replace it with a plain verb that changes the meaning. Chatbots repeat it as filler (ai-output.md A5); only a repeated, empty one goes.
+- "-х боломжтой" ("танилцах боломжтой", "хөгжүүлэх боломжтой болдог"). Usually native, and it carries real meaning (opportunity, possibility). Never replace it with a plain verb that changes the meaning. Chatbots repeat it (ai-output.md A5): ease a repeat by letting one "боломжтой" cover a converb chain, not by deleting a "can".

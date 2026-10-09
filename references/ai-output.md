@@ -31,7 +31,7 @@ AI templates leave "[Нэр]", "[өдөр, сар]", "________" (53 per 1,000 wo
 
 (per 100 sentences) Human writers instead start sentences with "Тэгээд" and "Гэтэл", which never opened a sentence in the AI sample. Two-thirds of AI essays have three or more connector openers covering a fifth of their sentences or more; none of the human texts in the five genres do, and 1% of human web pages.
 
-**What counts:** additive and consequence connectors (Мөн, Мөн түүнчлэн, Түүнчлэн, Иймд, Иймээс, Тиймээс, Юуны өмнө, Үүнээс гадна, Үүний зэрэгцээ). **What does not:** ordinals that number the essay's points (Нэгдүгээрт, Хоёрдугаарт), the essay frame (Нэг талаас / Нөгөө талаас, Эцэст нь, Дүгнэж хэлэхэд), and contrast (Харин, Гэвч). "Юуны өмнө" or "Дараа нь" that opens a numbered series (followed by Хоёрдугаарт, Гуравдугаарт) works as an ordinal: do not count it. These were not more frequent in AI text, and schools teach them.
+**What counts:** additive and consequence connectors (Мөн, Мөн түүнчлэн, Түүнчлэн, Иймд, Иймээс, Тиймээс, Юуны өмнө, Үүнээс гадна, Үүний зэрэгцээ). **What does not:** ordinals that number the essay's points (Нэгдүгээрт, Хоёрдугаарт), the essay frame (Нэг талаас / Нөгөө талаас, Эцэст нь, Дүгнэж хэлэхэд), and contrast (Харин, Гэвч). "Юуны өмнө" and "Дараа нь" that number points in a series (followed by Дараа нь, Хоёрдугаарт, Гуравдугаарт) work as ordinals: do not count them. "Мөн" and "Түүнчлэн" still count, even inside a series. These were not more frequent in AI text, and schools teach them.
 
 **Fix:** keep about one counted connector opener per five sentences. Remove the rest by joining the sentence to the one before it with a converb or "бөгөөд" (follow the merging rule in SKILL.md), or by simply dropping the connector when the logic is clear without it. Dropping is the default; when the link is causal ("Иймд"), drop the word rather than inventing a "тул" clause. Aim at or below the limit: merging lowers the sentence count. Keep "Иймд ...-ыг хүсье" in official letters: it is the request formula. Keep "Дүгнэж хэлэхэд" in an essay's conclusion.
 
@@ -55,13 +55,13 @@ AI templates leave "[Нэр]", "[өдөр, сар]", "________" (53 per 1,000 wo
 
 ## A5. "-х боломжтой" filler (ease when repeated)
 
-2.9 per 1,000 words in AI text, 0.3 in human text (10×). One use usually carries meaning (opportunity, possibility: keep it, see translationese.md). When two or three pile into one passage, keep the ones that mean something and drop the rest.
+2.9 per 1,000 words in AI text, 0.3 in human text (10×). One use usually carries meaning (opportunity, possibility: keep it, see translationese.md). Deleting "боломжтой" turns "can" into a plain statement, which hard rule 4 forbids. When two pile into one sentence, chain the verbs with a converb so one "боломжтой" covers both. Where the uses sit in separate sentences and each means "can", keep them.
 
 > **Before:** Танай тамгын газрын зүгээс санал хүлээн авах боломжтой эсэхийг судлан, уулзалт товлох боломжтой эсэхээ мэдэгдэхийг хүсэж байна.
 >
-> **After:** Танай тамгын газрын зүгээс санал хүлээн авах эсэхийг судлан, уулзалт товлох боломжтой эсэхээ мэдэгдэхийг хүсэж байна.
+> **After:** Танай тамгын газрын зүгээс санал хүлээн авч, уулзалт товлох боломжтой эсэхийг судлан мэдэгдэхийг хүсэж байна.
 
-(Before: a Claude Haiku letter. After: **[дүгнэлт]**, needs review.)
+(Before: a Claude Haiku letter. After: **[дүгнэлт]**, needs review. Both verbs keep "can"; nothing is deleted except the repetition.)
 
 ## A6. Ghost experts (flag)
 
