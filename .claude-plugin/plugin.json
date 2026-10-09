@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "mongolian-humanizer",
+  "description": "Rewrite AI-generated Mongolian text so it reads like a native speaker wrote it: removes English calques, bureaucratic phrasing, AI stock phrases, and overused particles.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Batsuren02",
+    "url": "https://github.com/Batsuren02"
+  },
+  "homepage": "https://github.com/Batsuren02/mongolian-humanizer",
+  "repository": "https://github.com/Batsuren02/mongolian-humanizer",
+  "license": "MIT",
+  "keywords": ["mongolian", "монгол", "writing", "editing", "humanize", "translationese"]
+}

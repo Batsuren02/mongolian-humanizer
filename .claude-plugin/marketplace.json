@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace-manifest.json",
+  "name": "mongolian-humanizer",
+  "owner": {
+    "name": "Batsuren02",
+    "url": "https://github.com/Batsuren02"
+  },
+  "description": "The mongolian-humanizer skill, installable as a Claude Code plugin.",
+  "plugins": [
+    {
+      "name": "mongolian-humanizer",
+      "source": "./",
+      "description": "Rewrite AI-generated Mongolian text so it reads like a native speaker wrote it.",
+      "license": "MIT",
+      "keywords": ["mongolian", "монгол", "writing", "editing", "humanize", "translationese"]
+    }
+  ]
+}
