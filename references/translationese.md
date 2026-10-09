@@ -1,107 +1,100 @@
-# Орчуулгын хэллэг (English calques)
+# Орчуулгын хэллэг (translationese)
 
-The biggest group. Each pattern is an English (sometimes Russian) structure copied into Mongolian. The fix is almost never a synonym. It is a different sentence shape.
+AI Mongolian is mostly translationese: the model builds an English (and, through older Mongolian text, Russian) sentence and fills it with Mongolian words. Each pattern below is tagged by evidence: **[эх сурвалж]** documented by Mongolian translation or stylistics scholars, **[зөвлөмж]** translator practice advice, **[дүгнэлт]** this skill's inference. Act firmly on the first, carefully on the others.
 
-## T1. "Энэ нь ... юм" / "X бол Y юм" sentence frames
+## T1. Noun + хийх / хийгдэх, or process noun + явагдах / болох, for a verb [эх сурвалж]
 
-**Watch for:** sentences opening with "Энэ нь", "Энэ бол", "Тэр нь", "Үүнд"; definition-style "X бол ... юм" in every paragraph; "юм." closing sentence after sentence.
-**Why:** a copy of English "This is..." / "It is...". Mongolian usually names the real subject or joins the sentence to the previous one.
+The main mark (Энхбаяр 2014; Шагдарсүрэн 2009; see principle 1). Event nouns with болох/явагдах are native and stay: "хурал болно", "сургалт явагдана", "тэмцээн боллоо".
 
-> **Before:** Шинэ хууль батлагдсан. Энэ нь иргэдийн эрхийг хамгаалахад чухал юм.
-> **After:** Шинээр батлагдсан хууль иргэдийн эрхийг хамгаална.
+> **Before:** Өчигдөр сайд нартай ярилцлага хийв. Ярилцлагын үеэр шинэ хуулийн талаар санал солилцоо явагдсан.
+> **After:** Өчигдөр сайд нартай уулзаж, шинэ хуулийн талаар санал солилцов.
 
-## T2. "нэг" used as an article
+More: хүйтрэлт явагдах → хүйтрэх; мал төллөлт явагдах → мал төллөх; цөлжилт болжээ → цөлжжээ; итгэлтэй байна → итгэж байна.
 
-**Watch for:** "нэг чухал асуудал", "нэг гайхалтай боломж", "нэг томоохон алхам" where no counting is meant.
-**Why:** English "a/an". Mongolian has no article.
+## T2. Agentless passive (-гд-) [эх сурвалж]
 
-> **Before:** Уур амьсгалын өөрчлөлт бол нэг том асуудал юм.
-> **After:** Уур амьсгалын өөрчлөлт том асуудал.
+English and Russian favour the passive, Mongolian the active (Энхбаяр). Name the doer when it is known.
 
-(Keep "нэг" when it really means "one" or "a certain": "Нэг өдөр...", "нэг хүн надад хэлсэн".)
+| Translated | Mongolian |
+|---|---|
+| НҮБ-ээр зохион байгуулагдсан хурал | НҮБ-ын зохион байгуулсан хурал |
+| Хурлаар асуудлууд хөндөгджээ | Хурлаар ... асуудлыг хөнджээ |
+| Ажил зохион байгуулагдлаа | ... ажил зохион байгууллаа |
+| Концерт тоглогдоно | Концерт тоглоно |
+| Энэ ном нэрт зохиолчоор бичигдсэн | Энэ номыг нэрт зохиолч бичсэн |
 
-## T3. "-ын тусламжтайгаар", "-аар дамжуулан", "-ын тусламжтай"
+**Keep:** native -гд- on perception and spontaneous verbs (харагдах, санагдах, бодогдох, сонсогдох), and the passive when the doer is truly unknown or in academic text.
 
-**Watch for:** "технологийн тусламжтайгаар", "интернэтээр дамжуулан", "судалгаагаар дамжуулан".
-**Why:** "with the help of", "through". Mongolian instrumental case (-аар/-ээр/-оор/-өөр) or "ашиглан" is enough.
+## T3. New -лт coinages and -лт chains [эх сурвалж]
 
-> **Before:** Бид технологийн тусламжтайгаар цаг хэмнэж чадна.
-> **After:** Технологи ашиглавал цаг хэмнэнэ.
+Бүрнээ lists translator coinages that multiply -лт nouns: хууралт, хүлээлт, чагналт, товшилт, өвдөлт, цохилт, таталт, where Mongolian would use the verb. Шагдарсүрэн ties the -лт surge to copying Russian and English sentence structure.
 
-## T4. "-х боломжтой" for "can"
+> **Before:** Хамтын ажиллагааны сайжруулалт хийгдэх болно.
+> **After:** Хамтын ажиллагаагаа сайжруулах болно.
 
-**Watch for:** "та ашиглах боломжтой", "хүүхдүүд сурах боломжтой", "үүнийг хийх боломжтой" stacked through a text.
-**Why:** English "can / is able to / it is possible to". Mongolian "-ж болно", "-ж чадна", or a plain future "-на".
+(The formal "-х болно" future stays; only the noun + passive frame was the fault.)
 
-> **Before:** Та манай аппликейшнийг ашиглан төлбөрөө төлөх боломжтой.
-> **After:** Төлбөрөө манай аппаар төлж болно.
+> **Before:** Төслийн хэрэгжилтийн үр дүнгийн үнэлгээ хийгдсэн.
+> **After:** Төсөл хэр үр дүнтэй хэрэгжсэнийг үнэлсэн.
 
-## T5. Possessive pronoun plus reflexive suffix
+Also malformed pairs from translation: "зовлон шаналан" → "зовлон шаналал"; "сэтгэлийн энэлэн" → "сэтгэлийн энэлэл".
 
-**Watch for:** "өөрийн мэдлэгээ", "өөрсдийн ирээдүйгээ", "тэдний гэр бүлээ", "түүний ажлаа".
-**Why:** English "their own / his". The reflexive suffix -аа/-ээ/-оо/-өө already says "one's own". Adding "өөрийн/өөрсдийн" doubles it.
+**Keep:** established -лт nouns used as nouns (уулзалт, сургалт, ярилцлага, хэрэглээ, үйлдвэрлэл).
 
-> **Before:** Оюутнууд өөрсдийн мэдлэгээ ашиглан өөрсдийн ирээдүйгээ бүтээдэг.
-> **After:** Оюутнууд мэдлэгээ ашиглан ирээдүйгээ бүтээдэг.
+## T4. Calqued idioms and feelings [эх сурвалж]
 
-(Keep "өөрийн" when it contrasts with someone else's: "Өөрийн гэсэн байртай болсон.")
+Пүрэв-Очир: "хонгилын үзүүрт гэрэл харагдах", "инфляцийг нэг оронтой тоонд барих" are half-translated borrowings. Эрдэнэмаам: media phrases "Ийм мэдрэмж төрлөө", "мэдрэмж авмаар байна" come from translated literature.
 
-## T6. Repeated pronoun subjects
+Fix by saying it the Mongolian way **[дүгнэлт: suggestions, not from the sources]**:
+- хонгилын үзүүрт гэрэл харагдлаа → найдвар төрлөө, гарц харагдлаа
+- инфляцийг нэг оронтой тоонд барих → инфляцийг 10 хувиас доош барих
+- Ийм мэдрэмж төрлөө → Тийм санагдлаа; сэтгэл нэг л ...
+- мэдрэмж авмаар байна → мэдэрмээр байна, үзмээр байна
 
-**Watch for:** "Тэр ... Тэр ... Тэр", "Бид ... Бид ...", "Та ... Та ..." starting consecutive sentences.
-**Why:** English needs a subject in every clause. Mongolian drops it once it is clear.
+## T5. Redundant plural [эх сурвалж]
 
-> **Before:** Тэр 2010 онд сургуулиа төгссөн. Тэр дараа нь Улаанбаатарт ажилласан. Тэр одоо багш.
-> **After:** Тэр 2010 онд сургуулиа төгсөөд Улаанбаатарт ажилласан. Одоо багш.
+Plural suffixes are optional in Mongolian. Отгонсүрэн (via Пүрэв-Очир, nairuulga.mn): no plural after a numeral, a quantifier, a collective, or inside a paired word.
 
-## T7. Passive "-гд-" with a hidden or calqued agent
+| Translated | Mongolian |
+|---|---|
+| зарим оюутнууд | зарим оюутан |
+| олон номууд | олон ном |
+| 23 ажилчид | 23 ажилчин |
+| ололт амжилтууд | ололт амжилт |
+| хонь малуудаа | хонь малаа |
 
-**Watch for:** "шийдвэр гаргагдсан", "арга хэмжээ авагдсан", "багшаар заагдсан", "-аар бичигдсэн".
-**Why:** English passive and "by X". Mongolian prefers active voice, and "by X" is usually a genitive + participle: "багшийн заасан", "Ж.Батын бичсэн".
+**Keep:** plural on people without a quantifier when it marks the group ("багш нар", "эцэг эхчүүд", "хүүхдүүд").
 
-> **Before:** Энэ ном нэрт зохиолчоор бичигдсэн бөгөөд олон хэлээр орчуулагдсан.
-> **After:** Энэ номыг нэрт зохиолч бичсэн бөгөөд олон хэлээр орчуулагдсан.
+## T6. Word order copied from English [эх сурвалж]
 
-(The second passive stays: the translators are unknown. If the actor is genuinely unknown, or the text is academic, passive is fine.)
+Энхбаяр: modifiers precede the noun in Mongolian order; titles follow names.
+- "long-standing political and economic relations" → "улс төр, эдийн засгийн урт хугацааны харилцаа"
+- "Жонон Гарри" → "Гарри хунтайж"
 
-## T8. English quote structure
+## T7. Pronoun overuse [зөвлөмж + дүгнэлт]
 
-**Watch for:** a quote, then "гэж X хэлэв", then another separate quote sentence; or "X хэлэхдээ: "..." гэв." chains.
-**Why:** English "...," said John. "..." Mongolian folds it into one sentence with "гэж" at the end.
+Translators advise using pronouns sparingly: Mongolian is not "bombarded" with pronouns like English (unread.today). Drop a repeated subject pronoun once it is clear, especially across converb chains.
+
+> **Before:** Тэр 2010 онд сургуулиа төгссөн. Тэр дараа нь Улаанбаатарт ажилласан.
+> **After:** Тэр 2010 онд сургуулиа төгсөөд Улаанбаатарт ажилласан.
+
+## T8. English quote structure [зөвлөмж]
+
+Fold a split quote into one sentence ending in "гэж ... хэлэв" (unread.today).
 
 > **Before:** "Би удахгүй гэртээ харина." гэж Жон хэлэв. "Тэгээд хүүхдүүдээ тэвэрнэ."
 > **After:** "Удахгүй гэртээ хариад хүүхдүүдээ тэвэрнэ" гэж Жон хэлэв.
 
-## T9. "-ын хувьд", "-тай холбоотойгоор", "-ын тухайд" as filler frames
+## T9. Untranslated English words [дүгнэлт]
 
-**Watch for:** "Боловсролын хувьд авч үзвэл", "эдийн засгийн тухайд", "үүнтэй холбоотойгоор" opening sentences.
-**Why:** English "in terms of", "regarding", "in connection with".
+"Контент", "фокуслах", "импакт", "фийдбэк", "челленж" where a settled Mongolian word exists (агуулга, анхаарах, нөлөө, санал, сорилт). Keep established loanwords (компьютер, интернэт, систем, програм, стратеги, менежмент) and terms the field has not settled.
 
-> **Before:** Эрүүл мэндийн хувьд авч үзвэл, спорт хүнд маш их ач тустай.
-> **After:** Спорт эрүүл мэндэд тустай.
+## Weak or unverified (do not apply mechanically)
 
-## T10. Giant pre-noun clauses
-
-**Watch for:** five or more words of modifiers stacked before one noun: "хүн амын эрүүл мэндийг сайжруулахад чиглэсэн, олон улсын түвшинд хүлээн зөвшөөрөгдсөн шинэ хөтөлбөр".
-**Why:** English relative clauses ("a program that..., which...") forced into Mongolian head-final order.
-**Fix:** split into two sentences, or move part into a verb.
-
-> **Before:** Хүн амын эрүүл мэндийг сайжруулахад чиглэсэн, олон улсын түвшинд хүлээн зөвшөөрөгдсөн шинэ хөтөлбөрийг хэрэгжүүлж эхэлсэн.
-> **After:** Хүн амын эрүүл мэндийг сайжруулах шинэ хөтөлбөр хэрэгжиж эхэлсэн. Энэ хөтөлбөрийг олон улсад хүлээн зөвшөөрдөг.
-
-## T11. Untranslated English words where Mongolian has a settled word
-
-**Watch for:** "контент" (агуулга), "фокуслах" (анхаарах, төвлөрөх), "импакт" (нөлөө), "имплементаци" (хэрэгжүүлэлт), "фийдбэк" (санал), "челленж" (сорилт), "оптимизаци хийх" (сайжруулах), "хайлайт" (онцлох).
-**Why:** the model reaches for the English token. Each switch makes the reader stop.
-**Keep:** established loanwords (компьютер, интернэт, програм, систем, стратеги, менежмент) and terms the Mongolian field has not settled on. In casual posts, keep slang the author already uses.
-
-> **Before:** Бид контентын чанарт илүү фокуслаж, хэрэглэгчийн фийдбэкийг авах хэрэгтэй.
-> **After:** Агуулгын чанарт илүү анхаарч, хэрэглэгчдээс санал авах хэрэгтэй.
-
-## T12. "make / do" light-verb calques
-
-**Watch for:** "өөрчлөлт хийх" everywhere, "дүн шинжилгээ хийх" for every "analyze", "ялгаа гаргах" for "make a difference". ("Алдаа гаргах" and "шийдвэр гаргах" are native; leave them.)
-**Fix:** use the Mongolian verb: өөрчлөх, шинжлэх, нөлөөлөх.
-
-> **Before:** Энэ төсөл нийгэмд ялгаа гаргах болно.
-> **After:** Энэ төсөл нийгэмд нөлөөлнө.
+These appeared in earlier drafts but no Mongolian source confirms them as faults. Change them only if the sentence reads foreign to you for another reason:
+- "нэг" as an English article ("нэг чухал асуудал").
+- "-ын тухай", "явуулах", "байгаа болно".
+- "Энэ нь ... юм" sentence frames. These are native.
+- "өөрийн/өөрсдийн" + reflexive -аа ("өөрийн биеэ"). Often native.
+- "Зохион байгуулах" itself is a native compound verb. Only the passive "зохион байгуулагдсан" is a documented calque.
+- "-х боломжтой" ("танилцах боломжтой", "хөгжүүлэх боломжтой болдог"). Usually native, and it carries real meaning (opportunity, possibility). Never replace it with a plain verb that changes the meaning.

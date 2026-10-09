@@ -1,22 +1,38 @@
-# What is NOT an AI sign (хуурамч дохио)
+# Засах шаардлагагүй зүйлс (what NOT to change)
 
-Read this before a full rewrite. Mongolian writers hit many of these patterns on their own. Look for clusters, not single hits.
+Read this before any substantial rewrite. Every item here is native Mongolian that an editor trained on English advice would wrongly remove.
 
-- **Required official formulas.** Албан бичиг has fixed phrases: "Иймд ...-ыг хүсье", "...-ыг танилцуулж байна", "Хүндэтгэсэн", "Дээрх асуудлаар". Keep them. Cut only the excess around them.
-- **Established loanwords.** компьютер, интернэт, систем, програм, стратеги, менежмент, технологи, банк. These are Mongolian now.
-- **School essay structure.** Mongolian schools teach "Оршил, Үндсэн хэсэг, Дүгнэлт" and openers like "Өнөөгийн нийгэмд". A student writing that way may be following the teacher. Flag the opener only if other AI tells are present too.
-- **Literary repetition and parallelism.** Poetry, speeches, and fiction repeat words and use "төдийгүй" on purpose. Do not flatten them.
-- **Academic passive and "-ын хувьд".** In research writing these are precise, not filler.
-- **One "нь", one "маш", one "Мөн түүнчлэн".** Normal. The tell is the pile-up.
-- **Typos, dialect, and spoken forms.** Human signals. Do not correct them unless asked.
-- **Latin-script Mongolian ("bi irlee", "zaa").** A casual human habit. Do not convert to Cyrillic unless asked.
-- **Polite "Та" in letters.** Correct register, not AI.
-- **Text in quotes, names, titles, and laws.** Do not rewrite quoted speech, organization names, law titles, or a phrase being discussed as an example.
+## Native features (keep)
 
-## Signs of a real human writer (keep these)
+- **Paired words (хос үг):** эрх үүрэг, гэм буруу, ололт амжилт, эцэг эх, ах дүү, сайн сайхан, өргөжүүлэн бэхжүүлэх. Balance is a named principle of Mongolian style (Сүхбаатар).
+- **Long converb-chained sentences.** Native and often better than short ones (Ринчен; journalism stylistics).
+- **Formal formulas (тогтсон хэллэг):** "чухал үүрэг гүйцэтгэдэг", "онцгой ач холбогдолтой", "Өнөөгийн ... эрин үед", "Дүгнэж хэлэхэд". Сүхбаатар calls fixed phrases a general feature of human language, heavily used in newspapers. In essays and official text they are expected.
+- **Official formulas:** "Иймд ...-ыг хүсье", "...-ыг танилцуулж байна", "-тэй холбогдон", "үндсэн дээр", "Хүндэтгэсэн", "Танаа".
+- **"Энэ нь", "бол", topic "нь".** Native topic marking. Only a pile-up within one sentence is a fault.
+- **Lexicalised -лт nouns** used as nouns: уулзалт, сургалт, ярилцлага, хэрэглээ.
+- **Native compound verbs:** зохион байгуулах, хүлээн авах, хянан шалгах, зохион бүтээх.
+- **Perception and spontaneous -гд-:** харагдах, санагдах, бодогдох, сонсогдох.
+- **Particles and stance endings:** юм, билээ, шүү, даа/дээ, л, ч, биз, "-даг юм".
+- **Plural on people for a group:** багш нар, эцэг эхчүүд, хүүхдүүд (no numeral or quantifier). Also "сүүлийн жилүүдэд": "сүүлийн" is not a quantifier.
+- **Event nouns with болох/явагдах:** "хурал болно", "сургалт явагдана".
+- **"-х боломжтой", "-х болно":** native modal and future forms that carry meaning.
+- **"-лаа" in personal narration** of past experience.
+- **Honorific words** when addressing elders, superiors, or in ceremony.
+- **School-essay conventions:** эхлэл / үндсэн хэсэг / дүгнэлт, quotations, imagery, idioms. The curriculum rewards them.
 
-- Specific, odd details: a street name, a teacher's nickname, a price someone paid.
+## Human signals (keep)
+
+- Typos, dialect, spoken forms. Do not correct unless asked.
+- Latin-script Mongolian in casual posts ("bi irlee"). Do not convert unless asked.
+- Specific, odd details: a street name, a teacher's nickname, a price.
 - Mixed feelings or doubt: "Зөв гэж бодож байгаа ч яг итгэлгүй байна."
 - Era-bound slang and references.
-- Uneven rhythm: a short sentence, then a long one.
-- Self-corrections and asides in parentheses.
+
+## Leave alone entirely
+
+- Quoted speech, names of organizations, titles of laws and books, and phrases being discussed as examples.
+- Legal text: fix only chatbot leftovers and obvious calques; do not restyle.
+
+## The test
+
+If you are about to change something, ask: "Would a Mongolian language teacher mark this as an error?" If the answer is no, or you are not sure, leave it.

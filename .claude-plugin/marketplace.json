@@ -10,7 +10,7 @@
     {
       "name": "mongolian-humanizer",
       "source": "./",
-      "description": "Rewrite AI-generated Mongolian text so it reads like a native speaker wrote it.",
+      "description": "Edit AI-generated or translated Mongolian text following Mongolian stylistics, not English rules.",
       "license": "MIT",
       "keywords": ["mongolian", "монгол", "writing", "editing", "humanize", "translationese"]
     }

@@ -1,71 +1,92 @@
 # Worked examples (бүрэн жишээ)
 
-Each example shows the input, what a scan finds, and a final rewrite. No rewrite adds a fact that is not in the input.
+No rewrite adds a fact that is not in the input.
 
-## 1. Essay (эсээ)
+## 1. Acceptable essay: change almost nothing
 
 **Input:**
 
 > Өнөөгийн хурдацтай хөгжиж буй технологийн эрин үед боловсрол нь хүний амьдралд маш чухал үүрэг гүйцэтгэдэг юм. Боловсрол нь зөвхөн мэдлэг олж авах хэрэгсэл биш, харин хувь хүний хөгжил, нийгмийн дэвшил, эдийн засгийн өсөлтийн үндэс суурь юм. Мөн түүнчлэн, олон судлаачдын үзэж байгаагаар чанартай боловсрол нь ирээдүйн амжилтын түлхүүр болдог. Түүгээр ч зогсохгүй, сурагчид өөрсдийн мэдлэг, ур чадвараа хөгжүүлэх боломжтой болдог. Дүгнэж хэлэхэд, боловсрол бол бидний ирээдүйн гэрэлт замын эхлэл юм.
 
-**Found (8 types → full rewrite):**
-- Stock opener (A2): "Өнөөгийн хурдацтай хөгжиж буй технологийн эрин үед"
-- Inflated significance (A1): "маш чухал үүрэг гүйцэтгэдэг", "үндэс суурь", "түлхүүр болдог"
-- Negative parallelism (A7): "зөвхөн ... биш, харин ..."
-- Rule of three (A5): "хувь хүний хөгжил, нийгмийн дэвшил, эдийн засгийн өсөлт"
-- Transition pile (A3): "Мөн түүнчлэн", "Түүгээр ч зогсохгүй"
-- Vague attribution (A8): "олон судлаачдын үзэж байгаагаар"
-- Calques (T4, T5): "хөгжүүлэх боломжтой", "өөрсдийн ... -аа"
-- "нь" overuse (G1), "юм." endings (G5), empty conclusion (A4)
+**Дүгнэлт:** school essay, acceptable formal Mongolian. Засвар шаардлагагүй.
 
-**Rewrite:**
+**Хэвээр үлдээсэн зүйлс:**
+- The opening formula and "маш чухал үүрэг гүйцэтгэдэг юм": standard essay register with a "-даг юм" stance.
+- "хувь хүний хөгжил, нийгмийн дэвшил, эдийн засгийн өсөлт": a balanced parallel list, the essay's content.
+- "Мөн түүнчлэн", "Түүгээр ч зогсохгүй": connectives that make the argument flow.
+- "Дүгнэж хэлэхэд": expected in a school essay conclusion.
+- "хөгжүүлэх боломжтой болдог": means "get the chance to develop". Changing it to "хөгжүүлдэг" would change the meaning.
 
-> Боловсролгүй хүнд өнөөдөр амьдрал хэцүү. Сургууль зөвхөн мэдлэг өгөөд зогсохгүй, хүн өөрийгөө хөгжүүлэх, нийгэм урагшлах, эдийн засаг өсөхөд ч нөлөөлдөг. Сайн боловсрол эзэмшсэн хүн ирээдүйд амжилтад хүрэх магадлал өндөр. Сурагчид сургуульд мэдлэгээ нэмэхийн хажуугаар ур чадвараа ч хөгжүүлдэг.
+**Анхаарах:** "олон судлаачдын үзэж байгаагаар" names no researcher; cite one or drop the attribution. The essay states only general truths; one example from your own experience would give it a personal angle (өнцөг).
 
-**Notes:** the unsourced "олон судлаачид" became a plain claim. The moral conclusion was cut because it added nothing. The three areas stay because they are the essay's content.
+**The wrong way** (what an English-style humanizer produced): "Боловсролгүй хүнд өнөөдөр амьдрал хэцүү." It labels people, turns a framed statement into a blunt verdict, drops "-даг юм", and leaves one lopsided clause. See register-and-tone.md.
 
-## 2. Official letter (албан бичиг)
+## 2. Translated report: full rewrite
 
 **Input:**
 
-> Танай байгууллагын үйл ажиллагааг сайжруулах чиглэлээр хамтран ажиллах асуудлыг судлан үзэх зорилгоор уулзалт зохион байгуулах ажлыг хэрэгжүүлэхээр төлөвлөж байгаа болно. Энэхүү уулзалт нь хоёр талын хамтын ажиллагааг цаашид улам бүр өргөжүүлэх, бэхжүүлэх, гүнзгийрүүлэхэд онцгой ач холбогдолтой юм.
+> Өчигдөр сургууль дээр эцэг эхчүүдтэй уулзалт хийгдсэн. Уулзалтаар хүүхдүүдийн сурлагын асуудлууд хөндөгдсөн. Олон эцэг эхчүүд санал хэлсэн. Багш нар саналуудыг хүлээн авсан. Цаашид хамтын ажиллагааны сайжруулалт хийгдэх болно.
 
-**Found (6 types → full rewrite, formal register kept):**
-- Frame phrases (K3): "чиглэлээр", "асуудлыг судлан үзэх зорилгоор"
-- Empty process verbs (K2): "уулзалт зохион байгуулах ажлыг хэрэгжүүлэх"
-- "болно" ending (K7): "төлөвлөж байгаа болно"
-- Demonstrative (K5): "Энэхүү"
-- Intensifier pile + triple verbs (K6): "цаашид улам бүр өргөжүүлэх, бэхжүүлэх, гүнзгийрүүлэх"
-- Inflated significance (A1): "онцгой ач холбогдолтой"
+**Дүгнэлт:** short news-style report with a translated skeleton. Full.
 
-**Rewrite:**
+**Засвар хийсэн зүйлс:**
+- "уулзалт хийгдсэн", "сайжруулалт хийгдэх": noun + хийгдэх instead of a verb (T1, T3).
+- "асуудлууд хөндөгдсөн": agentless passive (T2) and redundant plural.
+- "Олон эцэг эхчүүд", "саналуудыг": plural after a quantifier, plural on a mass noun (T5).
+- "сайжруулалт хийгдэх болно": the "-х болно" future stays; only the noun frame changes.
+- Four sentences ending -сан in a row (R1).
 
-> Танай байгууллагын үйл ажиллагааг сайжруулахад хамтран ажиллах талаар ярилцах уулзалт хийхээр төлөвлөж байна. Энэ уулзалт хоёр талын хамтын ажиллагааг цааш өргөжүүлэхэд тустай гэж үзэж байна.
+**Хэвээр үлдээсэн зүйлс:**
+- "эцэг эх": paired word.
+- "эцэг эхчүүдтэй", "хүүхдүүдийн", "багш нар": plural on people without a quantifier, which is native.
 
-**Notes:** still formal, still polite. Just half the length.
+**Засварласан хувилбар:**
 
-## 3. Social post (пост)
+> Өчигдөр сургууль дээр эцэг эхчүүдтэй уулзаж, хүүхдүүдийн сурлагын асуудлыг ярилцлаа. Олон эцэг эх санал хэлж, багш нар саналыг нь хүлээн авсан. Цаашид хамтын ажиллагаагаа сайжруулах болно.
+
+## 3. Official letter: stay formal
+
+**Input:**
+
+> Танай байгууллагын үйл ажиллагааг сайжруулах чиглэлээр хамтран ажиллах асуудлыг судлан үзэх зорилгоор уулзалт зохион байгуулагдахаар төлөвлөгдөж байна. Энэхүү уулзалт нь хоёр талын хамтын ажиллагааг цаашид өргөжүүлэн бэхжүүлэхэд онцгой ач холбогдолтой юм.
+
+**Дүгнэлт:** official letter. Selective: the first sentence has a translated skeleton; the second is good official style.
+
+**Засвар хийсэн зүйлс:**
+- "зохион байгуулагдахаар төлөвлөгдөж байна": double agentless passive (T2). The sender is the doer.
+- "чиглэлээр ... асуудлыг судлан үзэх зорилгоор уулзалт": a long noun chain before the verb; the meeting's purpose reads more clearly with a verb.
+
+**Хэвээр үлдээсэн зүйлс:**
+- "Энэхүү", "онцгой ач холбогдолтой юм": normal official register.
+- "өргөжүүлэн бэхжүүлэх": a balanced official pair.
+- "Танай": polite address.
+
+**Засварласан хувилбар:**
+
+> Танай байгууллагын үйл ажиллагааг сайжруулахад хамтран ажиллах асуудлаар уулзаж ярилцахаар төлөвлөж байна. Энэхүү уулзалт нь хоёр талын хамтын ажиллагааг цаашид өргөжүүлэн бэхжүүлэхэд онцгой ач холбогдолтой юм.
+
+## 4. Social post: casual, keep the author's style
 
 **Input:**
 
 > 🚀 Бидний Шинэ Үйлчилгээ!
 >
-> Бид та бүхэнд манай шинэ үйлчилгээг танилцуулж байгаадаа баяртай байна. Энэ нь зүгээр нэг үйлчилгээ биш, харин таны амьдралыг өөрчлөх гайхалтай шийдэл юм. Та манай аппликейшнийг ашиглан захиалгаа хурдан, хялбар, найдвартай хийх боломжтой.
+> Мэдээжийн хэрэг, бид та бүхэнд манай шинэ үйлчилгээг танилцуулж байгаадаа баяртай байна! Захиалгын хүргэлт 5 минутын дотор хийгдэнэ. Та манай аппликейшнийг ашиглан захиалгаа хурдан, хялбар хийх боломжтой.
+
+**Дүгнэлт:** promotional post. Selective.
+
+**Засвар хийсэн зүйлс:**
+- "Мэдээжийн хэрэг": chatbot leftover (V3).
+- "Бидний Шинэ Үйлчилгээ": Title Case in Cyrillic (typography).
+- "хүргэлт ... хийгдэнэ": noun + passive хийгдэх (T1).
+
+**Хэвээр үлдээсэн зүйлс:**
+- The emoji and the exclamation marks: normal for a brand post.
+- "та бүхэнд": polite plural address.
+- "хурдан, хялбар": a balanced pair, the actual selling point.
+
+**Засварласан хувилбар:**
+
+> 🚀 Бидний шинэ үйлчилгээ!
 >
-> ✅ **Хурдан:** 5 минутад хүргэнэ
-> ✅ **Хялбар:** Хэдхэн товшилт
-
-**Found (7 types → full rewrite, casual register):**
-- Emoji and Title Case heading (Y3, Y5): "🚀 Бидний Шинэ Үйлчилгээ!"
-- "Энэ нь ... юм" (T1), negative parallelism (A7), hype (A6): "гайхалтай шийдэл"
-- Rule of three (A5): "хурдан, хялбар, найдвартай"
-- "-х боломжтой" (T4)
-- Bold-label list (Y4)
-
-**Rewrite:**
-
-> Манай шинэ үйлчилгээ гарлаа!
->
-> Одооноос захиалгаа аппаар хэдхэн товшоод өгч болно. Захиалгыг 5 минутад хүргэнэ.
-
-**Notes:** "найдвартай" was dropped because the post gave nothing to back it up. If the author wants it, it needs a concrete reason.
+> Та бүхэнд манай шинэ үйлчилгээг танилцуулж байгаадаа баяртай байна! Захиалгыг 5 минутын дотор хүргэнэ. Манай аппликейшнээр захиалгаа хурдан, хялбар өгөх боломжтой.

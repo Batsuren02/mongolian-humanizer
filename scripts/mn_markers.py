@@ -1,13 +1,18 @@
-"""Count surface AI-writing markers in Mongolian (Cyrillic) text.
+"""Count mechanical translationese markers in Mongolian (Cyrillic) text.
 
 Usage:
     python mn_markers.py FILE
     python mn_markers.py < FILE
 
-Prints a JSON report: hits per check, how many distinct pattern types were
-found, and the suggested intervention level (light / selective / full).
-This only catches mechanical markers. Calques and rhythm need a human or model
-reading; treat the count as a floor, not a verdict.
+Prints a JSON report: hits per check, how many distinct marker types were
+found, and a suggested intervention level (light / selective / full).
+
+The checks follow the evidence in references/: noun + хийх instead of a verb,
+agentless passives, redundant plurals, runs of identical endings, piled-up
+"нь", chatbot residue, unsourced attributions, and AI typography. They do NOT
+flag formal formulas ("чухал үүрэг гүйцэтгэдэг", "Дүгнэж хэлэхэд"), topic
+"нь", or connectives: those are native Mongolian. Treat the count as a floor,
+not a verdict.
 """
 
 from __future__ import annotations
@@ -20,132 +25,165 @@ from pathlib import Path
 
 WORD = r"[А-Яа-яЁёӨөҮүA-Za-z]"
 
-# Phrase families mirror references/ai-phrases.md (A*) and kantselyarit.md (K).
-STOCK_PHRASES: dict[str, tuple[str, ...]] = {
-    "A1_inflated_significance": (
-        "чухал үүрэг гүйцэтгэдэг",
-        "чухал үүрэг гүйцэтгэх",
-        "онцгой ач холбогдолтой",
-        "шийдвэрлэх ач холбогдолтой",
-        "үнэлж баршгүй",
-        "салшгүй хэсэг",
-        "үндэс суурь",
-        "түлхүүр болдог",
-        "шинэ эрин үе",
-    ),
-    "A2_stock_opener": ("хурдацтай хөгжиж буй", "даяаршиж буй", "технологийн эрин"),
-    "A3_transition_pile": ("мөн түүнчлэн", "үүний зэрэгцээ", "түүгээр ч зогсохгүй", "нэмж хэлэхэд"),
-    "A4_empty_conclusion": ("дүгнэж хэлэхэд", "эцэст нь хэлэхэд", "ирээдүй гэрэлтэй", "гэрэлт зам"),
-    "A7_negative_parallelism": ("зүгээр нэг",),
-    "A8_vague_attribution": (
-        "судлаачдын үзэж байгаагаар",
-        "мэргэжилтнүүдийн хэлснээр",
-        "судалгаагаар батлагдсан",
-    ),
-    "A10_chatbot_leftover": (
-        "мэдээжийн хэрэг",
-        "маш сайн асуулт",
-        "тусалсандаа баяртай",
-        "нэмэлт мэдээлэл хэрэгтэй бол",
-    ),
-    "K_kantselyarit": (
-        "арга хэмжээ авах",
-        "ажлыг хэрэгжүүлэх",
-        "ажлыг хэрэгжүүлсэн",
-        "зохион байгуулах ажлыг",
-        "анхаарч ажиллана",
-        "улам бүр",
-        "байгаа болно",
-    ),
-}
-
-CALQUE_PATTERNS: tuple[str, ...] = (
-    r"тусламжтайгаар",
-    r"{w}+х боломжтой",
-    # "өөрсдийн мэдлэг, ур чадвараа": possessive pronoun doubling the reflexive suffix
-    r"өөр(ийн|сдийн)\s[^.!?]{{0,40}}?{w}(аа|ээ|оо|өө)\b",
-    r"(?<!{w})нэг (чухал|том|томоохон|гайхалтай|шинэ) ",
-)
-
-QUANTIFIERS = (
-    "олон|бүх|зарим|ихэнх|хэд хэдэн|цөөн|цөөхөн|"
-    "хоёр|гурван|дөрвөн|таван|зургаан|долоон|найман|есөн|арван"
-)
-PLURAL_SUFFIX = r"{w}+(ууд|үүд|нууд|нүүд|чууд|чүүд)\b|хүмүүс|{w}+ нар\b"
-
-NI = re.compile(rf"(?<!{WORD})нь(?!{WORD})", re.IGNORECASE)
-LONG_DASH = re.compile(r"(?<!\d)\s*[—–]\s*(?!\d)|\s--\s")
-SENTENCE_END = re.compile(r"(?<=[.!?…])\s+")
-HEADING = re.compile(r"^\s*#{1,6}\s+(.+)$", re.MULTILINE)
-EMOJI = re.compile("[\U0001F300-\U0001FAFF☀-➿✅]")
-BOLD_LABEL = re.compile(r"^\s*(?:[-*•]|\S{1,2})?\s*\*\*[^*]+:\*\*", re.MULTILINE)
-BOLON_LIST = re.compile(rf"{WORD}+,\s+(болон|ба)\s+{WORD}+", re.IGNORECASE)
-
 
 def _compile(pattern: str) -> re.Pattern[str]:
     return re.compile(pattern.format(w=WORD), re.IGNORECASE)
 
 
-CALQUES = tuple(_compile(p) for p in CALQUE_PATTERNS)
-QUANT_PLURAL = _compile(rf"(?<!{{w}})({QUANTIFIERS})\s+({PLURAL_SUFFIX})")
+# T1/T3: lexicalised noun (-лт, -лга) + a light verb where Mongolian uses the verb.
+NOUN_VERB = _compile(
+    r"(?<!{w})({w}+(?:лт|лага|лэг|лого|лөг|лга|лгэ))\s+"
+    r"(хийгд{w}*|явагд{w}*|үзүүл{w}*|хий(?:в|лээ|сэн|нэ|х|ж|дэг|гээд)?)(?!{w})"
+)
+# Event nouns: "сургалт явагдана", "хэлэлцүүлэг явагдлаа" are native.
+EVENT_NOUNS = ("сургалт", "уулзалт", "ярилцлага", "хэлэлцүүлэг", "үзэсгэлэн", "сонгон шалгаруулалт")
+
+# T2: passive -гд- with a finite or participle ending.
+PASSIVE = _compile(
+    r"(?<!{w})({w}+гд(?:сан|сэн|сон|сөн|лаа|лээ|лоо|лөө|ана|энэ|оно|өнө|ах|эх|ох|өх"
+    r"|жээ|чээ|ав|эв|ов|өв|аж|эж|ож|өж|даг|дэг|дог|дөг))(?!{w})"
+)
+# Native -гд- verbs: perception, spontaneous, or lexical (not translation passives).
+NATIVE_GD_STEMS = (
+    "харагд", "санагд", "бодогд", "сонсогд", "үзэгд", "мэдэгд", "мэдрэгд",
+    "анзаарагд", "хамрагд", "дуулдагд", "тохиолдогд",
+)
+PASSIVE_MIN_HITS = 2
+
+QUANTIFIERS = (
+    "олон|бүх|зарим|ихэнх|хэд хэдэн|цөөн|цөөхөн|"
+    "хоёр|гурван|дөрвөн|таван|зургаан|долоон|найман|есөн|арван|\\d+"
+)
+PLURAL = r"{w}+(?:ууд|үүд|нууд|нүүд|чууд|чүүд)(?!{w})|хүмүүс|{w}+ нар(?!{w})"
+QUANT_PLURAL = _compile(
+    rf"(?<!{{w}})(?:{QUANTIFIERS})\s+(?!улсын)(?:{{w}}+\s+)?(?:{PLURAL})"
+)
+
+NI = _compile(r"(?<!{w})нь(?!{w})")
+DOUBLED_POSSESSIVE = _compile(
+    r"(?<!{w})(?:таны|миний|чиний|бидний)\s+(?:{w}+\s+){{1,4}}(?:тань|минь|чинь|маань)(?!{w})"
+)
+BOLON_LIST = _compile(r"{w}+,\s+(?:болон|ба)\s+{w}+")
+MASH = _compile(r"(?<!{w})маш(?!{w})")
+MASH_MIN_HITS = 3
+
+SAN_ENDING = re.compile(r"(сан|сэн|сон|сөн)$")
+RUN_LENGTH = 3
+
+CHATBOT_PHRASES = (
+    "мэдээжийн хэрэг",
+    "маш сайн асуулт",
+    "тусалсандаа баяртай",
+    "тустай байх гэж найдаж",
+    "нэмэлт мэдээлэл хэрэгтэй бол",
+    "дэлгэрэнгүй авч үзье",
+    "-ыг хүргэж байна",
+)
+ATTRIBUTION_PHRASES = (
+    "судлаачдын үзэж байгаагаар",
+    "мэргэжилтнүүдийн хэлснээр",
+    "судалгаагаар батлагдсан",
+    "эрдэмтэд үздэг",
+)
+CALQUED_IDIOMS = (
+    "мэдрэмж төр",
+    "мэдрэмж ав",
+    "хонгилын үзүүрт",
+    "нэг оронтой тоонд",
+)
+
+SENTENCE_END = re.compile(r"(?<=[.!?…])\s+")
+LONG_DASH = re.compile(r"(?<!\d)\s*[—–]\s*(?!\d)|\s--\s")
+HEADING = re.compile(r"^\s*#{1,6}\s+(.+)$", re.MULTILINE)
+EMOJI = re.compile("[\U0001F300-\U0001FAFF☀-➿✅]")
+BOLD_LABEL = re.compile(r"^\s*(?:[-*•]|\S{1,2})?\s*\*\*[^*]+:\*\*", re.MULTILINE)
 
 
 def split_sentences(text: str) -> list[str]:
     return [s.strip() for s in SENTENCE_END.split(text.strip()) if s.strip()]
 
 
-def check_ni_overuse(text: str) -> list[str]:
-    """Sentences with a doubled 'нь', or every 'нь' sentence when it is dense.
-
-    Dense means 3+ in total and in at least half of the sentences.
-    """
-    sentences = split_sentences(text)
-    counts = [len(NI.findall(s)) for s in sentences]
-    doubled = [s for s, n in zip(sentences, counts) if n >= 2]
-    with_ni = [s for s, n in zip(sentences, counts) if n]
-    dense = sum(counts) >= 3 and len(with_ni) * 2 >= len(sentences)
-    return with_ni if dense else doubled
-
-
-def check_stock_phrases(text: str) -> list[str]:
+def _find_phrases(text: str, phrases: tuple[str, ...]) -> list[str]:
     lowered = text.lower()
-    return [p for phrases in STOCK_PHRASES.values() for p in phrases if p in lowered]
+    return [p for p in phrases if p in lowered]
 
 
-def stock_phrase_families(text: str) -> list[str]:
-    lowered = text.lower()
-    return [fam for fam, phrases in STOCK_PHRASES.items() if any(p in lowered for p in phrases)]
+def check_noun_verb(text: str) -> list[str]:
+    return [
+        m.group(0)
+        for m in NOUN_VERB.finditer(text)
+        if not (m.group(2).lower().startswith("явагд") and m.group(1).lower() in EVENT_NOUNS)
+    ]
 
 
-def check_calques(text: str) -> list[str]:
-    return [m.group(0) for rx in CALQUES for m in rx.finditer(text)]
+def check_passive(text: str) -> list[str]:
+    hits = [
+        m.group(1)
+        for m in PASSIVE.finditer(text)
+        if not m.group(1).lower().startswith(NATIVE_GD_STEMS)
+    ]
+    return hits if len(hits) >= PASSIVE_MIN_HITS else []
 
 
 def check_quantifier_plural(text: str) -> list[str]:
     return [m.group(0) for m in QUANT_PLURAL.finditer(text)]
 
 
+def check_ni_overuse(text: str) -> list[str]:
+    """Sentences with two or more standalone "нь". One per sentence is native."""
+    return [s for s in split_sentences(text) if len(NI.findall(s)) >= 2]
+
+
+def check_doubled_possessive(text: str) -> list[str]:
+    return [m.group(0) for m in DOUBLED_POSSESSIVE.finditer(text)]
+
+
+def check_bolon_list(text: str) -> list[str]:
+    return [m.group(0) for m in BOLON_LIST.finditer(text)]
+
+
+def check_mash(text: str) -> list[str]:
+    hits = MASH.findall(text)
+    return hits if len(hits) >= MASH_MIN_HITS else []
+
+
+def _last_words(text: str) -> list[str]:
+    return [
+        re.sub(r"[^\w]", "", s.split()[-1].lower())
+        for s in split_sentences(text)
+        if s.split()
+    ]
+
+
+def check_ending_runs(text: str) -> list[str]:
+    """Runs of 3+ consecutive sentences ending in the same word, or all in -сан."""
+    words = _last_words(text)
+    runs: list[str] = []
+    same = san = 1
+    for prev, cur in zip(words, words[1:]):
+        same = same + 1 if cur and cur == prev else 1
+        san = san + 1 if SAN_ENDING.search(cur) and SAN_ENDING.search(prev) else 1
+        if same == RUN_LENGTH:
+            runs.append(f"…{cur} ×{RUN_LENGTH}")
+        elif san == RUN_LENGTH and same < RUN_LENGTH:
+            runs.append(f"…-сан ×{RUN_LENGTH}")
+    return runs
+
+
+def check_chatbot(text: str) -> list[str]:
+    return _find_phrases(text, CHATBOT_PHRASES)
+
+
+def check_attribution(text: str) -> list[str]:
+    return _find_phrases(text, ATTRIBUTION_PHRASES)
+
+
+def check_calqued_idioms(text: str) -> list[str]:
+    return _find_phrases(text, CALQUED_IDIOMS)
+
+
 def check_dashes(text: str) -> list[str]:
     return [m.group(0) for m in LONG_DASH.finditer(text)]
-
-
-def check_monotonous_endings(text: str) -> list[str]:
-    """Endings repeated in 3+ consecutive sentences, or in 3+ sentences that
-    make up at least 40% of the text."""
-    last_words = [
-        re.sub(r"[^\w]", "", s.split()[-1].lower()) for s in split_sentences(text) if s.split()
-    ]
-    found: list[str] = []
-    streak = 1
-    for prev, cur in zip(last_words, last_words[1:]):
-        streak = streak + 1 if cur and cur == prev else 1
-        if streak == 3:
-            found.append(cur)
-    for word in dict.fromkeys(last_words):
-        n = last_words.count(word)
-        if word and word not in found and n >= 3 and n * 5 >= len(last_words) * 2:
-            found.append(word)
-    return found
 
 
 def check_title_case(text: str) -> list[str]:
@@ -165,27 +203,22 @@ def check_bold_labels(text: str) -> list[str]:
     return BOLD_LABEL.findall(text)
 
 
-def check_bolon_list(text: str) -> list[str]:
-    return [m.group(0) for m in BOLON_LIST.finditer(text)]
-
-
-def check_mash(text: str) -> list[str]:
-    hits = re.findall(rf"(?<!{WORD})маш(?!{WORD})", text, re.IGNORECASE)
-    return hits if len(hits) >= 3 else []
-
-
 CHECKS: dict[str, Callable[[str], list[str]]] = {
-    "ni_overuse": check_ni_overuse,
-    "stock_phrases": check_stock_phrases,
-    "calques": check_calques,
-    "quantifier_plural": check_quantifier_plural,
+    "noun_plus_light_verb": check_noun_verb,
+    "agentless_passive": check_passive,
+    "redundant_plural": check_quantifier_plural,
+    "ending_runs": check_ending_runs,
+    "ni_pileup": check_ni_overuse,
+    "doubled_possessive": check_doubled_possessive,
+    "calqued_idioms": check_calqued_idioms,
+    "bolon_in_lists": check_bolon_list,
+    "mash_overuse": check_mash,
+    "chatbot_leftovers": check_chatbot,
+    "unsourced_attribution": check_attribution,
     "dashes": check_dashes,
-    "monotonous_endings": check_monotonous_endings,
     "title_case_headings": check_title_case,
     "emoji": check_emoji,
     "bold_label_lists": check_bold_labels,
-    "bolon_in_lists": check_bolon_list,
-    "mash_overuse": check_mash,
 }
 
 
@@ -199,15 +232,11 @@ def level_for(types_found: int) -> str:
 
 def analyze(text: str) -> dict:
     hits = {name: check(text) for name, check in CHECKS.items()}
-    # Each stock-phrase family counts as its own pattern type.
-    families = stock_phrase_families(text)
-    other_types = sum(1 for name, found in hits.items() if found and name != "stock_phrases")
-    types_found = len(families) + other_types
+    found = {name: items for name, items in hits.items() if items}
     return {
-        "types_found": types_found,
-        "level": level_for(types_found),
-        "phrase_families": families,
-        "hits": {name: found for name, found in hits.items() if found},
+        "types_found": len(found),
+        "level": level_for(len(found)),
+        "hits": found,
     }
 
 
