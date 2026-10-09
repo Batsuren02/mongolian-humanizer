@@ -2,6 +2,8 @@
 
 Tags: **[эх сурвалж]** = stated in a Mongolian stylistics or linguistics source (see sources.md). **[дүгнэлт]** = this skill's inference from those sources.
 
+Contents: 1 the verb · 2 Mongolian skeleton · 3 balance and pairing · 4 converb chains · 5 fit the style · 6 endings and particles · 7 respect
+
 ## 1. Үйл үг бол амин сүнс (the verb carries the sentence)
 
 **[эх сурвалж]** Лувсанвандан (1987): the verb is the organizing centre of the Mongolian sentence; Indo-European languages favour nouns where Mongolian uses verbs. Аким and Чойжил call the verb "монгол хэлний амин сүнс". Энхбаяр (2014) and Шагдарсүрэн (2009) list noun-for-verb rendering as the main mark of translation from English and Russian.

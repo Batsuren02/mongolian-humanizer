@@ -13,6 +13,11 @@ jobs:
         with:
           python-version: "3.12"
       - run: python -m unittest discover -s tests -v
+      - name: Plugin eval suite matches tests/eval/cases.jsonl
+        run: |
+          python tests/eval/build_plugin_evals.py
+          git status --porcelain -- evals/
+          test -z "$(git status --porcelain -- evals/)"
       - name: Validate plugin manifests
         run: |
           python -c "import json; [json.load(open(f, encoding='utf-8')) for f in ['.claude-plugin/plugin.json', '.claude-plugin/marketplace.json']]"

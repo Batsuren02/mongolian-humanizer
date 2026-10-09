@@ -1,6 +1,10 @@
 # Орчуулгын хэллэг (translationese)
 
-AI Mongolian is mostly translationese: the model builds an English (and, through older Mongolian text, Russian) sentence and fills it with Mongolian words. Each pattern below is tagged by evidence: **[эх сурвалж]** documented by Mongolian translation or stylistics scholars, **[зөвлөмж]** translator practice advice, **[дүгнэлт]** this skill's inference. Act firmly on the first, carefully on the others.
+Translated Mongolian, by a person or by older machine translation, keeps an English or Russian sentence and fills it with Mongolian words. These patterns are its marks. Current chatbot output mostly does **not** show them: measured against human Mongolian of the same genres, it has no more noun + хийх, passives, redundant plurals or -сан runs than human writing, while professional translation has more **[өгөгдөл]**. For chatbot output, start with ai-output.md and use this file for what is actually there.
+
+Each pattern is tagged by evidence: **[эх сурвалж]** documented by Mongolian translation or stylistics scholars, **[зөвлөмж]** translator practice advice, **[дүгнэлт]** this skill's inference, **[өгөгдөл]** measured. Act firmly on the first, carefully on the others.
+
+Contents: T1 noun + хийх · T2 passives · T3 -лт coinages · T4 calqued idioms · T5 redundant plural · T6 word order · T7 pronouns · T8 quote structure · T9 English words · Weak or unverified
 
 ## T1. Noun + хийх / хийгдэх, or process noun + явагдах / болох, for a verb [эх сурвалж]
 
@@ -17,7 +21,9 @@ More: хүйтрэлт явагдах → хүйтрэх; мал төллөлт 
 
 ## T2. Agentless passive (-гд-) [эх сурвалж]
 
-English and Russian favour the passive, Mongolian the active (Энхбаяр). Name the doer when it is known.
+English and Russian favour the passive, Mongolian the active (Энхбаяр). Name the doer when it is known. The documented calques are an -аар/-ээр agent with a passive ("НҮБ-ээр зохион байгуулагдсан") and a double passive ("зохион байгуулагдахаар төлөвлөгдөж").
+
+**Measured [өгөгдөл]:** a single passive with no doer is as common in pre-2021 human news, letters and reports as in chatbot output (about 5 per 1,000 words in both; in half or more of human news and reports). Most of those are lexical verbs or fixed formulas, so do not rewrite a passive just because it is one.
 
 | Translated | Mongolian |
 |---|---|
@@ -27,7 +33,7 @@ English and Russian favour the passive, Mongolian the active (Энхбаяр). N
 | Концерт тоглогдоно | Концерт болно; (хамтлаг) концерт тоглоно |
 | Энэ ном нэрт зохиолчоор бичигдсэн | Энэ номыг нэрт зохиолч бичсэн |
 
-**Keep:** native -гд- on perception and spontaneous verbs (харагдах, санагдах, бодогдох, сонсогдох), and the passive when the doer is truly unknown or in academic text.
+**Keep:** native -гд- on perception and spontaneous verbs (харагдах, санагдах, бодогдох, сонсогдох); lexical -гд- verbs (нэгдэх, холбогдох, нэмэгдэх, нээгдэх, өөрчлөгдөх, таалагдах, ногдох, элэгдэх, хуримтлагдах; "Нэгдсэн Үндэстний Байгууллага"); fixed formulas ("хуулиар хамгаалагдсан", "тогтоолоор батлагдсан", "1921 онд байгуулагдсан", "өргөн дэлгэр зохион байгуулагдлаа"); and the passive when the doer is truly unknown or in academic text.
 
 ## T3. New -лт coinages and -лт chains [эх сурвалж]
 
@@ -69,6 +75,8 @@ Plural suffixes are optional in Mongolian. Отгонсүрэн (via Пүрэв-
 
 **Keep:** plural on people without a quantifier when it marks the group ("багш нар", "эцэг эхчүүд", "хүүхдүүд"), including pairs naming people.
 
+**Measured [өгөгдөл]:** plural after a quantifier also appears in 12 to 38% of native letters, news and reports, and less in chatbot output. Fix it as a correctness point the sources document, not as a sign of translation or AI. "Эхний 100 үйлчлүүлэгчид" (to the first 100 customers) is a dative singular, not a plural.
+
 Also: "олон судлаачдын" → "олон судлаачийн"; "120 багш нар" → "120 багш".
 
 ## T6. Word order copied from English [эх сурвалж]
@@ -103,4 +111,4 @@ These appeared in earlier drafts but no Mongolian source confirms them as faults
 - "Энэ нь ... юм" sentence frames. These are native.
 - "өөрийн/өөрсдийн" + reflexive -аа ("өөрийн биеэ"). Often native.
 - "Зохион байгуулах" itself is a native compound verb. Only the passive "зохион байгуулагдсан" is a documented calque.
-- "-х боломжтой" ("танилцах боломжтой", "хөгжүүлэх боломжтой болдог"). Usually native, and it carries real meaning (opportunity, possibility). Never replace it with a plain verb that changes the meaning.
+- "-х боломжтой" ("танилцах боломжтой", "хөгжүүлэх боломжтой болдог"). Usually native, and it carries real meaning (opportunity, possibility). Never replace it with a plain verb that changes the meaning. Chatbots repeat it as filler (ai-output.md A5); only a repeated, empty one goes.

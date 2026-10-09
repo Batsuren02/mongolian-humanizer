@@ -1,80 +1,67 @@
 # Mongolian Humanizer
 
-Хиймэл оюуны бичсэн, эсвэл гадаад хэлнээс орчуулсан монгол текстийг уншихад нэг л эвгүй санагддаг. Үг нь зөв, дүрэм нь алдаагүй мөртлөө өгүүлбэр нь монгол биш. Ринчен гуай нэгэн оюутны орчуулгыг "Үг нь монгол, өгүүлбэр нь орос байна" гэж шүүмжилсэн нь яг үүнийг хэлсэн хэрэг. Энэ skill ийм текстийг монгол найруулга зүйн ёсоор засварлахад тусална. Claude Code, Codex, Cursor зэрэг SKILL.md уншдаг хэрэгсэл бүхэнд ажиллана.
+Хиймэл оюуны бичсэн, эсвэл гадаад хэлнээс орчуулсан монгол текстийг уншихад нэг л эвгүй санагддаг. Үг нь зөв мөртлөө өгүүлбэр нь монгол биш. Ринчен гуайн хэлсэнчлэн "Үг нь монгол, өгүүлбэр нь орос байна." Энэ skill ийм текстийг монгол найруулга зүйн ёсоор засварлана. Claude Code, Codex, Cursor зэрэг SKILL.md уншдаг хэрэгсэлд ажиллана.
 
 *English below.*
 
 ## Жишээ
 
-Хиймэл оюуны бичсэн тайлан:
+> **Өмнө:** Өчигдөр сургууль дээр эцэг эхчүүдтэй уулзалт хийгдсэн. Уулзалтаар хүүхдүүдийн сурлагын асуудлууд хөндөгдсөн. Олон эцэг эхчүүд санал хэлсэн. Багш нар саналуудыг хүлээн авсан.
+>
+> **Дараа:** Өчигдөр сургууль дээр эцэг эхчүүдтэй уулзалт болсон. Уулзалтаар хүүхдүүдийн сурлагын асуудлыг хөндөж, олон эцэг эх санал хэлсэн бөгөөд багш нар саналыг нь хүлээн авсан.
 
-> Өчигдөр сургууль дээр эцэг эхчүүдтэй уулзалт хийгдсэн. Уулзалтаар хүүхдүүдийн сурлагын асуудлууд хөндөгдсөн. Олон эцэг эхчүүд санал хэлсэн. Багш нар саналуудыг хүлээн авсан.
+Аль хэдийн сайн бичигдсэн текстэд гар хүрэхгүй, "засвар шаардлагагүй" гээд орхино.
 
-Засварласны дараа:
+## Зарчим
 
-> Өчигдөр сургууль дээр эцэг эхчүүдтэй уулзалт болсон. Уулзалтаар хүүхдүүдийн сурлагын асуудлыг хөндөж, олон эцэг эх санал хэлсэн бөгөөд багш нар саналыг нь хүлээн авсан.
-
-Харин аль хэдийн сайн бичигдсэн текстэд skill гар хүрэхгүй. "Өнөөгийн хурдацтай хөгжиж буй технологийн эрин үед боловсрол нь хүний амьдралд маш чухал үүрэг гүйцэтгэдэг юм" гэх мэт өгүүлбэрийг засах шаардлагагүй гээд орхино.
-
-## Ямар зарчим баримталдаг вэ
-
-Англи хэлний humanizer-үүд "богино, энгийн, шулуун бич" гэж заадаг. Монгол текстэд үүнийг хэрэглэвэл бичвэр бүдүүлэг, сондгой болчихдог. Тиймээс энэ skill англи хэлний биш, монгол найруулга зүйн зарчмыг баримтална.
-
-Монгол хэлэнд үйл үг өгүүлбэрийн амин сүнс болдог тул "уулзалт хийлээ" гэхийн оронд "уулзлаа" гэж бичнэ. -гд- дагавраар хэн хийснийг нуусан өгүүлбэрт үйлдэгч мэдэгдэж байвал түүнийг эргүүлж өгнө. "Олон номууд" гэх мэт илүүдэл олон тооны дагаврыг хасна. Ижил төгсгөлтэй богино өгүүлбэрүүд цуварвал нөхцөл үйл үгээр холбож, нэг урсгалтай болгоно.
-
-Монгол хэлний сайхан талыг ч мөн хамгаална. Хос үг, тэнцвэртэй өгүүлбэр, урт нийлмэл өгүүлбэр, "чухал үүрэг гүйцэтгэдэг", "Дүгнэж хэлэхэд" мэтийн тогтсон хэллэг, "юм", "шүү", "билээ" гэх сул үгс бүгд утга агуулж, бичвэрт өнгө аяс өгдөг. Засварласан текст эхээсээ хэзээ ч бүдүүлэг, хүйтэн болох ёсгүй. Эх бичвэрт байхгүй баримт, тоо, эх сурвалж, хувийн үзэл бодлыг ч нэмэхгүй.
+- Монгол найруулга зүйг баримтална, англи хэлний "богино, энгийн бич" зөвлөгөөг биш.
+- Үйл үгийг сэргээнэ: "уулзалт хийлээ" биш, "уулзлаа".
+- Чатботын хүсэлт гаргагчид хандсан мөр ("Мэдээж. Иймэрхүү пост болно:"), олон давтагдсан "Мөн", "Иймд"-ийг цэгцэлнэ.
+- Хос үг, тогтсон хэллэг, "юм", "шүү", "билээ" зэрэг сул үгийг хамгаална.
+- Текстийг бүдүүлэг, хүйтэн болгохгүй. Баримт, тоо, эх сурвалж, үзэл бодол нэмэхгүй.
 
 ## Суулгах
-
-Бүх agent-д нэг дор суулгах бол:
 
 ```bash
 npx skills add Batsuren02/mongolian-humanizer --global
 ```
 
-Claude Code-ын plugin хэлбэрээр:
+Claude Code plugin хэлбэрээр:
 
 ```
 /plugin marketplace add Batsuren02/mongolian-humanizer
 /plugin install mongolian-humanizer@mongolian-humanizer
 ```
 
-Эсвэл гараар:
-
-```bash
-git clone https://github.com/Batsuren02/mongolian-humanizer.git ~/.claude/skills/mongolian-humanizer
-```
-
 ## Хэрэглэх
 
-Claude Code дээр `/mongolian-humanizer` гэж бичээд текстээ хуулж тавихад хангалттай. "Энэ текстийг монгол хүний бичсэн мэт болгоод өгөөч" гэж энгийнээр хэлсэн ч болно. Skill юуг зассан, юуг санаатайгаар хэвээр үлдээснээ тайлбарлаад, дараа нь засварласан хувилбараа өгнө. Өөрийн бичсэн текстээс жишээ өгвөл таны хэв маягийг дагана.
-
-Python суулгасан бол `scripts/mn_markers.py` скриптээр орчуулгын шинжийг тоолж болно. Энэ нь зөвхөн туслах хэрэгсэл болохоос эцсийн шийдвэр биш.
+`/mongolian-humanizer` гэж бичээд текстээ тавина, эсвэл "Энэ текстийг найруулж өгөөч" гэж хэлнэ. Skill юуг зассан, юуг хэвээр үлдээснээ тайлбарлаад засварласан хувилбараа өгнө.
 
 ## Хамтдаа сайжруулъя
 
-Хиймэл оюун монголоор хэрхэн бичдэг талаар судалгаа одоогоор бараг байхгүй. Тиймээс энэ skill-ийг сайжруулахад монгол хүн бүрийн нүд, чих хамгийн үнэтэй. Орчуулга шиг, хуурай санагдсан текст таарвал, эсвэл skill буруу засвар хийвэл Issue нээж, аль хэсэг нь яагаад эвгүй санагдсаныг бичээд үлдээгээрэй. Шинэ хэв маяг нэмэх бол `references/` доторх файлд өмнөх ба дараах жишээ, эх сурвалжийн хамт Pull Request илгээнэ үү. Скрипт өөрчилсөн бол `python -m unittest discover -s tests` ажиллуулж шалгаарай.
-
-Эх сурвалжийн жагсаалт: [references/sources.md](references/sources.md).
+Skill буруу засвар хийвэл, эсвэл орчуулга шиг санагдсан текст таарвал Issue нээж, аль хэсэг нь яагаад эвгүй байгааг бичээрэй. Дүрэм өөрчилсөн бол `python -m unittest discover -s tests` ажиллуулна уу.
 
 ---
 
 ## English
 
-An agent skill for editing AI-generated or translated Mongolian (Khalkha, Cyrillic). It follows Mongolian stylistics (найруулга зүй) rather than English writing advice, because "shorter, plainer, cut the formulas" makes Mongolian blunt and lopsided.
+An agent skill that edits AI-generated or translated Mongolian (Khalkha, Cyrillic) by the rules of Mongolian stylistics, not English writing advice. "Shorter, plainer, cut the formulas" makes Mongolian blunt and rude.
 
-It turns noun-heavy calques back into verbs, gives agentless passives their doer when the doer is known, removes redundant plurals, and joins choppy runs of identical endings with converbs. It leaves alone what is native: paired words, balanced and long converb sentences, fixed formal phrases, and particles like юм and шүү. It never makes a text ruder or lower in register, and never adds facts, sources, or opinions. Lifeless, generic voice and unsourced claims are flagged for the author, not papered over.
+- **Translated text:** turns noun-heavy calques back into verbs, removes redundant plurals, joins choppy runs of identical endings.
+- **Chatbot output:** removes lines addressed to the requester, keeps template placeholders, eases piled-up "Мөн"/"Иймд", flags generic voice and unnamed experts. A 2026 measurement found current chatbots do not write translationese; these are their real tells.
+- **Never:** makes a text ruder or lower in register, or adds facts, sources, examples, or opinions.
 
-Install with `npx skills add Batsuren02/mongolian-humanizer --global` or as a Claude Code plugin (see above), then run `/mongolian-humanizer`.
+Rules and evidence: [SKILL.md](SKILL.md), [references/ai-output.md](references/ai-output.md), [references/sources.md](references/sources.md).
 
-The principles come from Mongolian stylistics and translation scholarship (Сүхбаатар, Отгонсүрэн, Пүрэв-Очир, Энхбаяр, Чулуунбаатар, Эрдэнэмаам, Галсан and others); see [references/sources.md](references/sources.md). Structure and the no-fabrication rule follow [blader/humanizer](https://github.com/blader/humanizer).
+**Scripts** (optional, stdlib Python): `scripts/mn_markers.py` reports style hits and flags; `scripts/mn_compare.py ORIGINAL REWRITE` checks a rewrite for register drops, changed numbers, and blunt shortening.
+
+**Evals:** 36 cases in `tests/eval/cases.jsonl` with a deterministic scorer (`tests/eval/check_outputs.py`), and the same cases in `evals/` for `claude plugin eval . --judge-model sonnet`.
 
 ### Changelog
 
-- **0.2.1**: second review. Resolved rule conflicts (legal text, paired-word plurals, merging, chatbot phrases, emoji, quotes), fixed examples that changed meaning or invented an actor, and rewrote this README in natural Mongolian.
-- **0.2.0**: rebuilt on Mongolian stylistics; dropped English "AI phrase" lists that flagged normal formal Mongolian.
+- **0.3.0**: measured rebuild. Chatbot-output tells from a corpus comparison (references/ai-output.md); rules that fired on most human texts narrowed; mn_markers.py recalibrated; mn_compare.py, a 36-case eval suite, and CI checks added; SKILL.md cut to the essentials, details in references/.
+- **0.2.1**: resolved rule conflicts, fixed examples that changed meaning, rewrote this README in Mongolian.
+- **0.2.0**: rebuilt on Mongolian stylistics.
 - **0.1.0**: first version, adapted from English humanizer rules.
 
-## License
-
-MIT
+Structure and the no-fabrication rule follow [blader/humanizer](https://github.com/blader/humanizer). License: MIT.

@@ -55,6 +55,22 @@ Researched October 2026. Where a source was read only as an abstract, it says so
 - MonCulture-Eval (ACL Findings 2026): https://aclanthology.org/2026.findings-acl.1449.pdf
 - Thomson Foundation, AI in Mongolian newsrooms (2026): https://www.thomsonfoundation.org/media/4plfmkd4/mongolia_ai_newsrooms_2026.pdf
 - Mongolian Hunspell spellchecker and Claude skill: https://github.com/bataak/dict-mn
+- Д.Сандагсүрэн 2026, ChatGPT news drafts invent buyers, volumes and prices; default output "very official, feelingless" (Сэтгүүл зүй 27, pp. 37-47): https://journal.num.edu.mn/journalism/article/view/10932
+- Ц.Онон, Э.Тэргэл 2025, ChatGPT's Japanese-to-Mongolian literary translation, word for word (Орчуулгазүй 12, pp. 131-139): https://journal.num.edu.mn/TranslationStudies/article/view/9873
+- Correction (2026-10): MonCulture-Eval's "outsider" (Etic) bias is 20-33% in traditional script but 1.3-5.4% in Cyrillic for five frontier models (Table 4), so voice.md V2 no longer assumes sanitised cultural detail.
+- Less translationese than expected in LLM output for several languages (Mongolian not tested): arXiv 2608.17399 (abstract only).
+
+## Measurement behind ai-output.md (2026-10)
+
+Researched October 2026; the corpora are not shipped with the skill (third-party text).
+
+- AI side: 83 replies from Claude Sonnet, Claude Haiku and GPT-5.5 to 15 Mongolian prompts in five genres (essay, official letter, news, Facebook post, report). No GPT reports (usage limit); no Claude Opus.
+- Human side, pre-2021: 139 texts in the same genres from mC4 (https://huggingface.co/datasets/allenai/c4) and the Eduge news corpus (https://github.com/tugstugi/mongolian-nlp); CC-100 Mongolian web text (https://data.statmt.org/cc-100/) as a second reference. The essays, letters and posts are blog essays, open letters and blog posts, not school essays, request letters or Facebook posts.
+- Translation reference: NTREX-128 English-to-Mongolian news (https://github.com/MicrosoftTranslator/NTREX).
+- Method: about 360 features per text, rates matched by genre, 1,000-sample bootstrap; a tell counts only when all three models agree and the gap is at least 1.5×.
+- Main results: the translationese markers in translationese.md do not separate chatbot output from human writing (professional translation does show them); chat framing, sentence-initial connectors, generic -даг and modal endings, "-х боломжтой" and unnamed experts do; human writing has far more particles, questions, first person and long converb sentences.
+- The same corpora were used to recalibrate scripts/mn_markers.py: before, it rated 38% of human essays and 73% of human reports "selective" or "full" and every AI essay "light"; after, 96-100% of human texts in every genre are "light".
+- Morphology tools checked for the script: dict-mn with spylls is the only practical analyser (a spellchecker, no POS tags); Apertium and Giella Khalkha cover a few hundred stems. Gold data: SIGMORPHON 2022 morpheme segmentation (https://github.com/sigmorphon/2022SegmentationST).
 
 ## Other-language humanizers that informed the structure
 
@@ -62,3 +78,7 @@ Researched October 2026. Where a source was read only as an abstract, it says so
 - daleseo/korean-skills humanizer: https://github.com/daleseo/korean-skills
 - humanizer-ru: https://www.skills.sh/vladimir-human/humanizer-ru/humanizer-ru
 - Chinese translationese essay: https://yage.ai/share/ai-chinese-translationese-en-20260418.html
+- im-not-ai (Korean; corpus-checked rules, register-downgrade fixtures, "absence signals are observe-only"): https://github.com/epoko77-ai/im-not-ai
+- patina (Korean; ending-class collapse warning): https://github.com/devswha/patina
+- lieflat-less-ai-tone (Chinese; human-corpus check of AI tells): https://github.com/larashero3-dotcom/lieflat-less-ai-tone
+- humanizer-ru (Russian; measured rewrites): https://github.com/ilyautov/humanizer-ru

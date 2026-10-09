@@ -19,11 +19,13 @@ What to do:
 
 ## V2. Fluent but wrong [эх сурвалж: Left Behind 2026; MonCulture-Eval 2026; Thomson Foundation 2026]
 
-Benchmarks find models write fluent Mongolian while the content is weaker than in English: confident but false explanations, sanitised cultural detail, and answers that need manual checking. A humanizer cannot fix facts, but it must not hide them under smoother prose.
-- Flag claims that look invented: unsourced statistics, "судлаачдын үзэж байгаагаар" with no researcher, quotes with no speaker.
+Benchmarks find models write fluent Mongolian while the content is weaker than in English: confident but false explanations and answers that need manual checking. A Mongolian journalism study found ChatGPT news drafts inventing buyers, volumes and prices (Сандагсүрэн 2026). The benchmark that reports sanitised (outsider) cultural detail found it mostly in traditional script; in Cyrillic it was 1.3 to 5.4% of answers (MonCulture-Eval, Table 4), so do not assume it. A humanizer cannot fix facts, but it must not hide them under smoother prose.
+- Flag claims that look invented: unsourced statistics, "судлаачдын үзэж байгаагаар" or "гэж мэргэжилтнүүд үзэж байна" with nobody named (7× more common in chatbot output, ai-output.md A6), quotes with no speaker.
 - Never strengthen a doubtful claim while rewriting it.
 
 ## V3. Chatbot leftovers (remove when they address a chat user)
+
+Whole preamble and closing paragraphs ("Доорх нь ... загвар юм.", "Хэрэв ... хэрэгтэй бол хэлээрэй.") are covered in ai-output.md A1. The phrases below are the same thing inside a sentence.
 
 Replies to a chat user that leaked into the content. Remove them when they speak to "the user" rather than to the text's real reader:
 - "Мэдээж!", "Мэдээжийн хэрэг!", "Маш сайн асуулт байна!"
@@ -41,4 +43,4 @@ Hype adjectives with nothing behind them ("гайхалтай шийдэл", "д
 
 - Formal formulas and school-essay structure (see register-and-tone.md).
 - "Дүгнэж хэлэхэд" in an essay conclusion.
-- One "Мөн түүнчлэн". Translators actually advise using more connectives in official text, because Mongolian has many and they help it flow (unread.today). The problem is only a mechanical pile at the start of every sentence.
+- A connective now and then, "Мөн түүнчлэн" included. Translators advise using connectives in official text, because Mongolian has many and they help it flow (unread.today). The problem is a pile at the start of sentences: chatbots open sentences with "Мөн" 4.5× and "Иймд" 7× as often as human writers [өгөгдөл]. Keep about one per five sentences (ai-output.md A3).
