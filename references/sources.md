@@ -36,11 +36,21 @@ Researched October 2026. Where a source was read only as an abstract, it says so
 ## Grammar
 
 - Brosig 2015, present-tense forms, particles: https://cyberleninka.ru/article/n/aspect-and-epistemic-notions-in-the-system-of-the-present-tense-forms-in-khalkha-mongolian
-- Brosig, Yap & Ahrens 2019, "юм" (abstract): https://research.polyu.edu.hk/en/publications/assertion-presumption-and-presupposition-an-account-of-the-erstwh/
+- Brosig, Yap & Ahrens 2021, "Assertion, presumption and presupposition: an account of the erstwhile nominalizer YUM in Khalkha Mongolian", Studies in Language, pp. 896-940, doi 10.1075/sl.18050.bro (abstract only; the PolyU record is dated earlier): https://research.polyu.edu.hk/en/publications/assertion-presumption-and-presupposition-an-account-of-the-erstwh/
 - Namdag 2026, sentence-final forms: https://eprints.lib.hokudai.ac.jp/repo/huscap/all/99350/11_Namdag.pdf
 - Switch reference and converbs: https://www.cjvlang.com/Spicks/switchreference/switchreference07.html
 - Politeness in pronouns (WALS): https://wals.info/valuesets/45A-kha
 - Directness in requests (abstract): https://bpasjournals.com/library-science/index.php/journal/article/view/694
+
+## Orthography (authority chain, checked 2026-10-12)
+
+There is no new Cyrillic orthography. The norm is the 1983 rules plus the 2018 dictionary; the 2025-2026 council activity concerns foreign words and, probably, the traditional script.
+
+- 1983: Ц.Дамдинсүрэн, Б.Осор, *Монгол үсгийн дүрмийн толь* (rules and an 18,000-word dictionary). The rules online: https://toli.gov.mn/r
+- 2015: Law on the Mongolian Language, art. 8.1: one spelling set for Cyrillic, binding on citizens and legal entities; art. 19.1.1: media follow it.
+- 2016: Council resolution to follow the 1983 rules until a new dictionary appears (iKon gives two different days in September).
+- 2018: *Монгол хэлний зөв бичих дүрмийн журамласан толь*, about 38,000 headwords, same rules; the 2011 "700-word list" (дараахь → дараах and others) declared void. Online: https://toli.gov.mn
+- 2025-2026: working group and a council-approved "Монгол бичгийн зөв бичих дүрэм"; the articles do not say which script.
 
 ## Translator practice
 

@@ -77,7 +77,7 @@ Choosing a word without regard to its rung is "үг буруу сонгосон 
 
 ## 6. Төгсгөл, сул үг утга агуулна (endings and particles carry meaning)
 
-**[эх сурвалж: Brosig 2015, 2018; Brosig, Yap & Ahrens 2019]**
+**[эх сурвалж: Brosig 2015, 2018; Brosig, Yap & Ahrens 2021]**
 - **-сан/-сэн:** established knowledge.
 - **-лаа/-лээ:** direct, usually recent; also common in first-person narration of the writer's own experience.
 - **-жээ/-чээ:** indirect, learned or discovered; narrative past.

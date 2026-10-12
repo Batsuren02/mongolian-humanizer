@@ -14,6 +14,7 @@ Read this before changing anything. Every item here is native Mongolian that an 
 - **Perception and spontaneous -гд-:** харагдах, санагдах, бодогдох, сонсогдох.
 - **Lexical -гд- verbs and passive formulas** [өгөгдөл]: нэгдэх ("Нэгдсэн Үндэстний Байгууллага"), холбогдох, нэмэгдэх, нээгдэх, өөрчлөгдөх, таалагдах, ногдох; "хуулиар хамгаалагдсан", "тогтоолоор батлагдсан", "1921 онд байгуулагдсан", "өргөн дэлгэр зохион байгуулагдлаа". Half or more of human news and reports have agentless passives.
 - **Particles and stance endings:** юм, билээ, шүү, даа/дээ, л, ч, биз, "-даг юм".
+- **Sentences that end in a converb** (for example "-хад чинь", a complaint or irony aimed at the listener). They are modal, not unfinished [эх сурвалж: Namdag 2026]. Do not turn them into finite clauses.
 - **Plural on people for a group:** багш нар, эцэг эхчүүд, хүүхдүүд (no numeral or quantifier). Also "сүүлийн жилүүдэд": "сүүлийн" is not a quantifier.
 - **Event nouns with болох/явагдах:** "хурал болно", "сургалт явагдана".
 - **Established noun + verb terms:** "татварын хөнгөлөлт үзүүлэх" (legal term), "захиалга хийх", "дүгнэлт гаргах", "шийдвэр гаргах", "итгэлтэй байна" (I am sure).
@@ -28,7 +29,8 @@ Read this before changing anything. Every item here is native Mongolian that an 
 
 ## Human signals (keep)
 
-- Typos, dialect, spoken forms in the user's own writing. Do not correct unless asked. (In AI-generated text, misspellings and invented words are errors; fix them.)
+- Dialect, slang, and spoken forms in the user's own writing. Clear typos too, unless the user asked to засах or proofread: then fix the typos and nothing else. (In AI-generated text, misspellings and invented words are errors; fix them.)
+- Spelling variants the standard has not settled: loanwords with two forms (жендер/жендэр, программ/програм) and the variants of the 2011 council list (дараахь/дараах). The 2018 dictionary voided that list, so do not normalise them in the user's own writing; at most mention them in Анхаарах [эх сурвалж: Хэлний бодлогын үндэсний зөвлөл, 2018 dictionary].
 - Latin-script Mongolian in casual posts ("bi irlee"). Do not convert unless asked.
 - Particles (л, даа, биз, шүү, билээ), questions, "би", "тэгээд", "гэтэл": all far more common in human writing than in chatbot output [өгөгдөл]. Never remove them, and never add them by default where they are missing.
 - Specific, odd details: a street name, a teacher's nickname, a price.

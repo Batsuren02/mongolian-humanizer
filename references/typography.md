@@ -11,6 +11,7 @@ Most rules here are **[дүгнэлт]**: general AI formatting habits. Where th
 **Keep:**
 - Dialogue dashes at the start of a speech line ("— Сайн уу? гэв."), standard in Mongolian fiction.
 - A dash between subject and predicate nouns ("Улаанбаатар — Монгол Улсын нийслэл").
+- A dash between two clauses when the second gives the cause, consequence, or an addition to the first. The official rules list it as a normal use [эх сурвалж: toli.gov.mn/r §61]. The tell is the paired mid-sentence aside ("— ... —"), which the same rules send to commas or brackets.
 - Number ranges (2020–2024).
 - Any dash use in a user writing sample.
 
@@ -19,12 +20,12 @@ Most rules here are **[дүгнэлт]**: general AI formatting habits. Where th
 
 ## Y2. Mixed quote marks
 
-Mongolian writers use «...» or "...". Keep whichever the author uses, consistently. Do not mix «», "", and “” in one text. With no sign of preference, use "...".
+Mongolian writers use «...» or "...". Both «» and “” are named as the quote marks in the official rules, which also allow them around a word used in an ironic or emphasised sense [эх сурвалж: toli.gov.mn/r §58]. Keep whichever the author uses, consistently. Do not mix «», "", and “” in one text. With no sign of preference, use "...".
 
 ## Y3. Title Case headings in Cyrillic
 
 **Watch for:** "Боловсролын Шинэчлэлийн Үр Дүн", "Бидний Шинэ Үйлчилгээ".
-**Fix:** capitalize the first word and proper names only: "Боловсролын шинэчлэлийн үр дүн". Official names keep their capitals ("Монгол Улсын Их Хурал").
+**Fix:** capitalize the first word and proper names only: "Боловсролын шинэчлэлийн үр дүн". Official names keep their capitals ("Монгол Улсын Их Хурал"). The official rules capitalise every important word in the names of world and national bodies ("Нэгдсэн Үндэстний Байгууллага"), but only the first word for other offices and institutions ("Их сургууль") [эх сурвалж: toli.gov.mn/r §47].
 
 ## Y4. Bold-label bullet lists
 
