@@ -4,7 +4,7 @@ Translated Mongolian, by a person or by older machine translation, keeps an Engl
 
 Each pattern is tagged by evidence: **[эх сурвалж]** documented by Mongolian translation or stylistics scholars, **[зөвлөмж]** translator practice advice, **[дүгнэлт]** this skill's inference, **[өгөгдөл]** measured. Act firmly on the first, carefully on the others.
 
-Contents: T1 noun + хийх · T2 passives · T3 -лт coinages · T4 calqued idioms · T5 redundant plural · T6 word order · T7 pronouns · T8 quote structure · T9 English words · Weak or unverified
+Contents: T1 noun + хийх · T2 passives · T3 -лт coinages · T4 calqued idioms · T5 redundant plural · T6 word order · T7 pronouns · T8 quote structure · T9 Foreign words · Weak or unverified
 
 ## T1. Noun + хийх / хийгдэх, or process noun + явагдах / болох, for a verb [эх сурвалж]
 
@@ -101,9 +101,11 @@ Fold a split quote into one sentence ending in "гэж ... хэлэв" (unread.t
 > **Before:** "Би удахгүй гэртээ харина." гэж Жон хэлэв. "Тэгээд хүүхдүүдээ тэвэрнэ."
 > **After:** "Удахгүй гэртээ хариад хүүхдүүдээ тэвэрнэ" гэж Жон хэлэв.
 
-## T9. Untranslated English words [дүгнэлт]
+## T9. Untranslated foreign words (English, Russian) [дүгнэлт; native reader]
 
 "Контент", "фокуслах", "импакт", "фийдбэк", "челленж" where a settled Mongolian word exists (агуулга, анхаарах, нөлөө, санал, сорилт). Keep established loanwords (компьютер, интернэт, систем, програм, стратеги, менежмент) and terms the field has not settled.
+
+The test (native reader): Mongolian can say almost anything with its own words, so never bring in a Russian, English or other foreign word, and never write a clipped or invented form of one, unless the word has already become Mongolian and is more common than the native word. If it has not, use the Mongolian word or phrase. Do not add a foreign term to a text that has none, either.
 
 ## Weak or unverified (do not apply mechanically)
 
