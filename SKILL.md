@@ -35,6 +35,7 @@ Make AI-written or translated Mongolian read as if a good Mongolian writer wrote
 2. **Never invent.** No new facts, names, numbers, sources, examples, or opinions. Never fill a placeholder ("[Нэр]").
 3. **Meaning and tone stay.** Same meaning, same or higher politeness. Casual only if the user asks.
 4. **The author wins.** Keep their dialect, style, and script (Latin stays Latin). Explain in the user's language.
+5. **Your own words are Mongolian.** Never bring in a Russian, English, or other foreign word, or an invented or clipped form of one, unless it is already established Mongolian and more common than the native word ([translationese.md](references/translationese.md) T9).
 
 ## What to fix
 
