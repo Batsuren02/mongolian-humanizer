@@ -33,6 +33,8 @@ English and Russian favour the passive, Mongolian the active (Энхбаяр). N
 | Концерт тоглогдоно | Концерт болно; (хамтлаг) концерт тоглоно |
 | Энэ ном нэрт зохиолчоор бичигдсэн | Энэ номыг нэрт зохиолч бичсэн |
 
+**Keep the polite passive** in a complaint or request to an office or company ("засвар хийгдээгүй байна"); it softens the blame [native reader].
+
 **Keep:** native -гд- on perception and spontaneous verbs (харагдах, санагдах, бодогдох, сонсогдох); lexical -гд- verbs (нэгдэх, холбогдох, нэмэгдэх, нээгдэх, өөрчлөгдөх, таалагдах, ногдох, элэгдэх, хуримтлагдах; "Нэгдсэн Үндэстний Байгууллага"); fixed formulas ("хуулиар хамгаалагдсан", "тогтоолоор батлагдсан", "1921 онд байгуулагдсан", "өргөн дэлгэр зохион байгуулагдлаа"); and the passive when the doer is truly unknown or in academic text.
 
 ## T3. New -лт coinages and -лт chains [эх сурвалж]

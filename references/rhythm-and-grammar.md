@@ -43,7 +43,7 @@ Translator advice (unread.today):
 ## R6. Endings carry meaning [эх сурвалж: Brosig]
 
 Do not swap finite endings for variety alone:
-- -жээ (indirect, learned) vs -сан (established) vs -лаа (direct, usually recent or personal) change how the writer claims to know.
+- -жээ (indirect, learned) vs -сан (established) vs -лаа (direct, usually recent or personal) change how the writer claims to know. Never edit -жээ for variety, even on the writer's own memory ("санаанд тод үлджээ"): a native reader treats it as ordinary past tense.
 - -даг (habitual, general) vs -на (expected, future).
 - "юм" adds conviction. "-даг юм" in a general statement is a deliberate stance; keep it.
 - "-х болно" is a native formal future. In formal text, do not flatten it to "-на".
