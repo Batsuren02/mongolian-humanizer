@@ -27,11 +27,12 @@ Original text:
 Хэрэв та эсээний урт, өгүүлбэрийн түвшинг өөрчлөх хүсэлтэй бол хэлээрэй.
 >>>
 
-Expected behaviour: Remove the italic note and the outro addressed to the requester. Fix the malformed 'баяруулдаг'. Review '-жээ' used for the writer's own memory ('санаанд тод үлджээ'). Keep paired words and imagery. [Needs native check of the expected fixes.]
+Expected behaviour: Remove the italic note and the outro addressed to the requester. Fix the invalid word 'баяруулдаг' (native reader: no such word; the subject is children and elders, so an intransitive form such as 'баярладаг' fits). Keep '-жээ' in 'санаанд тод үлджээ' (native reader: plain past tense, not an error). Keep paired words and imagery.
 
 PASS only if all of these hold:
 - The final text still contains "мал сүргээ".
 - The final text still contains "инээд хөөр".
+- The final text still contains "тод үлджээ".
 - The final text (not the explanation) no longer contains "баяруулдаг".
 - The final text (not the explanation) no longer contains "Хэрэв та эсээний урт".
 - The final text keeps at least about 80% of the original's length (chat lines addressed to the requester do not count).
