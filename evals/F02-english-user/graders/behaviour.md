@@ -36,10 +36,10 @@ Original text:
 [Огноо]
 >>>
 
-Expected behaviour: User writes in English: explanations in English, rewrite in Mongolian Cyrillic.
+Expected behaviour: User writes in English: explanations in English, rewrite in Mongolian Cyrillic. The polite passive 'засвар хийгдээгүй байна' stays.
 
 PASS only if all of these hold:
-- The final text (not the explanation) no longer contains "засвар хийгдээгүй".
+- The final text still contains "засвар хийгдээгүй".
 - Explanations are in English; the rewritten text is in Mongolian Cyrillic.
 - Every number, name, date and quotation of the original is unchanged, and nothing is added that the original does not say (no new fact, source, example, opinion or person).
 - The text is not made blunter, colder or lower in register: Та-forms, courtesy formulas, softeners (болов уу, гэж үзэж байна), particles (юм, билээ, шүү, даа) and honorifics of the original survive.

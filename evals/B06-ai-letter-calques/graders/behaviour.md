@@ -36,12 +36,12 @@ Original text:
 [Огноо]
 >>>
 
-Expected behaviour: Official letter: fix noun+хийгдэх ('засвар хийгдээгүй', 'хэзээ хийгдэх'); keep 'Хүндэтгэсэн', the address line, and all placeholders; do not lower the register.
+Expected behaviour: Official letter: keep the polite passive 'засвар хийгдээгүй байна' in the complaint (native reader: it softens the blame); keep 'Хүндэтгэсэн', the address line, and all placeholders; do not lower the register.
 
 PASS only if all of these hold:
 - The final text still contains "Хүндэтгэсэн".
 - The final text still contains "Иймд".
-- The final text (not the explanation) no longer contains "засвар хийгдээгүй".
+- The final text still contains "засвар хийгдээгүй".
 - The final text keeps at least about 85% of the original's length (chat lines addressed to the requester do not count).
 - Every number, name, date and quotation of the original is unchanged, and nothing is added that the original does not say (no new fact, source, example, opinion or person).
 - The text is not made blunter, colder or lower in register: Та-forms, courtesy formulas, softeners (болов уу, гэж үзэж байна), particles (юм, билээ, шүү, даа) and honorifics of the original survive.

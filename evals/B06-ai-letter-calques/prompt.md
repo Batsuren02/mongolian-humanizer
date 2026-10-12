@@ -1,5 +1,5 @@
 ---
-description: "Official letter: fix noun+хийгдэх ('засвар хийгдээгүй', 'хэзээ хийгдэх'); keep 'Хүндэтгэсэн', the address line, and all placeholders; do not lower the register."
+description: "Official letter: keep the polite passive 'засвар хийгдээгүй байна' in the complaint (native reader: it softens the blame); keep 'Хүндэтгэсэн', the address line, and all placeholders; do not lower the register."
 tags: ["ai_output"]
 max_turns: 25
 allowed_tools: [Read, Glob, Grep, Skill]

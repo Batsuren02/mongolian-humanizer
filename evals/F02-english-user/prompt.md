@@ -1,5 +1,5 @@
 ---
-description: "User writes in English: explanations in English, rewrite in Mongolian Cyrillic."
+description: "User writes in English: explanations in English, rewrite in Mongolian Cyrillic. The polite passive 'засвар хийгдээгүй байна' stays."
 tags: ["mode"]
 max_turns: 25
 allowed_tools: [Read, Glob, Grep, Skill]
